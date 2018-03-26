@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// Imports
+@import "_select";
+
+nav {
+	font-size: 1.2em;
+
+	> ul {
+		list-style-type: none;
+
+		a {
+			color: unset;
+			text-decoration: unset;
+		}
+		li {
+			position: relative;
+			padding: 0.5em 1em;
+
+			text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+			box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.0);
+			transition: text-shadow 0.2s, box-shadow 0.2s 0.05s;
+		
+			&[data-sticker]::after {
+				display: inline-block;
+				content: attr(data-sticker);
+		
+				position: relative;
+				font-size: 0.7em;
+				left: 1em;
+				top: -0.5em;
+				padding: 0em 0.5em;
+				background-clip: padding-box;
+				background-color: rgba(255, 32, 32, 0.8);
+				text-shadow: none;
+				color: #EEE;
+				box-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+			}
+			&:hover {
+				@include animation(selectedNoise, 0.2s both);
+
+				text-shadow: 0.1em 0.1em 0.2em #66C;
+				box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.3);
+			}
+		}
+	}
+}

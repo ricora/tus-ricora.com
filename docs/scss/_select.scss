@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+// Imports
+@import "_extension";
+
+/*--- ぐしゃぐしゃアニメーション ---*/
+@include keyframes(selectedNoise) {
+	$n: 10;
+	$dx: 4;
+	$dy: 3;
+	$lenSq: $dx * $dx + $dy * $dy;
+	$ix: 5;
+	$iy: 0;
+	$sin: (2 * $dy * $dx) / $lenSq;
+	$cos: ($dx * $dx - $dy * $dy) / $lenSq;
+	$dummy: 2 * $sin * $cos;
+	$cos: $cos * $cos - $sin * $sin;
+	$sin: $dummy;
+
+	0% {
+		left: #{$ix}px;
+		top: #{$iy}px;
+	}
+	@for $i from 1 to $n {
+		$dummy: ($iy * $cos + $sin * $ix) * 0.9;
+		$ix: ($ix * $cos - $iy * $sin) * 0.9;
+		$iy: $dummy;
+
+		#{$i * 100 / $n}% {
+			left: #{$ix}px;
+			top: #{$iy}px;
+		}
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}

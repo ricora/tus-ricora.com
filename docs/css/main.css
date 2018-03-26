@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*--- ヘッダ部分 ---*/
+header {
+  background-color: #333;
+  color: #EEE;
+}
+header > div {
+  text-align: center;
+}
+header > div:nth-child(1) {
+  font-family: "Menlo", "Consolas", "Courier New", "Courier", monospace;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  padding: 0.2em;
+  text-shadow: 0 0 0.6em #111;
+  transition: text-shadow 0.5s;
+}
+header > div:nth-child(2) {
+  padding: 0.3em;
+  text-shadow: 0 0 0.6em #111;
+  transition: text-shadow 0.5s;
+}
+header:hover {
+  color: #FFD;
+}
+header:hover > div:nth-child(1) {
+  text-shadow: 0 0 0.9em #DDA;
+}
+header:hover > div:nth-child(2) {
+  text-shadow: 0 0 0.9em #DDA;
+}
+
+/*--- 基本スタイル ---*/
+body {
+  margin: 0;
+  background-color: #EEE;
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 13px;
+  }
+}
+main {
+  margin: 1em;
+}
+
+/*--- リンクの見た目 ---*/
+a.unset-link-style {
+  color: unset;
+  text-decoration: unset;
+}
+
+/*--- フォント ---*/
+.font-normal, body {
+  font-family: "游ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+  font-weight: normal;
+}
+
+.font-monospace, h3, h4 {
+  font-family: "Menlo", "Consolas", "Courier New", "Courier", "游ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+}
+
+/*--- ページの見出し ---*/
+h3, h4 {
+  font-weight: normal;
+  border-radius: 3px;
+  background-color: #333;
+  padding: 0.5em 1em;
+}
+
+/*--- 段落 ---*/
+p {
+  text-indent: 1em;
+}
+
+/*--- 装飾 ---*/
+.highlight-comment {
+  color: #608b4e;
+}
+.highlight-constant {
+  color: #b5cea8;
+}
+.highlight-control {
+  color: #c586c0;
+}
+.highlight-html-blackets {
+  color: #808080;
+}
+.highlight-html-attribute {
+  color: #9cdcfe;
+}
+.highlight-keyword {
+  color: #569cd6;
+}
+.highlight-line-number {
+  color: #808080;
+}
+.highlight-numeric {
+  color: #b5cea8;
+}
+.highlight-normal {
+  color: #d4d4d4;
+}
+.highlight-regexp {
+  color: #d16969;
+}
+.highlight-string {
+  color: #ce9178;
+}
+.highlight-type {
+  color: #4ec9b0;
+}
+
+/*--- 空白強制 (pre) ---*/
+.pre {
+  white-space: pre;
+}
+
+/*# sourceMappingURL=main.css.map */

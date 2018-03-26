@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+// Imports
+@import "_header";
+
+/*--- 基本スタイル ---*/
+body {
+	@extend .font-normal;
+
+	margin: 0;
+	background-color: #EEE;
+}
+@media (max-width: 450px) {
+	body {
+		font-size: 13px;
+	}
+}
+
+main {
+	margin: 1em;
+}
+
+/*--- リンクの見た目 ---*/
+a.unset-link-style {
+	color: unset;
+	text-decoration: unset;
+}
+
+/*--- フォント ---*/
+.font-normal {
+	font-family: "游ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+	font-weight: normal;
+}
+.font-monospace {
+	font-family: "Menlo", "Consolas", "Courier New", "Courier", "游ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+}
+
+/*--- ページの見出し ---*/
+h3, h4 {
+	@extend .font-monospace;
+
+	font-weight: normal;
+	border-radius: 3px;
+	background-color: #333;
+	padding: 0.5em 1em;
+}
+/*--- 段落 ---*/
+p {
+	text-indent: 1em;
+}
+
+/*--- 装飾 ---*/
+.highlight- {
+	&comment {
+		color: #608b4e;
+	}
+	&constant {
+		color: #b5cea8;
+	}
+	&control {
+		color: #c586c0;
+	}
+	&html-blackets {
+		color: #808080;
+	}
+	&html-attribute {
+		color: #9cdcfe;
+	}
+	&keyword {
+		color: #569cd6;
+	}
+	&line-number {
+		color: #808080;
+	}
+	&numeric {
+		color: #b5cea8;
+	}
+	&normal {
+		color: #d4d4d4;
+	}
+	&regexp {
+		color: #d16969;
+	}
+	&string {
+		color: #ce9178;
+	}
+	&type {
+		color: #4ec9b0;
+	}
+}
+
+/*--- 空白強制 (pre) ---*/
+.pre {
+	white-space: pre;
+}
