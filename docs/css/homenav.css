@@ -104,10 +104,14 @@ nav > ul a {
 }
 nav > ul li {
   position: relative;
-  padding: 0.5em 1em;
-  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+  margin-left: -1em;
+  padding: 0.5em 2em;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
   box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0);
-  transition: text-shadow 0.2s, box-shadow 0.2s 0.05s;
+  transition: text-shadow 0.5s, box-shadow 0.5s;
+  background-image: url(../img/menuitemArrow.svg);
+  background-position: 0 calc(1em - 20px);
+  background-repeat: no-repeat;
 }
 nav > ul li[data-sticker]::after {
   display: inline-block;
@@ -121,13 +125,15 @@ nav > ul li[data-sticker]::after {
   background-color: rgba(255, 32, 32, 0.8);
   text-shadow: none;
   color: #EEE;
-  box-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+  box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.5s;
 }
 nav > ul li:hover {
-  -webkit-animation: 0.2s both selectedNoise;
-  animation: 0.2s both selectedNoise;
-  text-shadow: 0.1em 0.1em 0.2em #66C;
+  text-shadow: 0.05em 0.05em 0.07em rgba(0, 64, 255, 0.8);
   box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.3);
+}
+nav > ul li:hover[data-sticker]::after {
+  box-shadow: 0.05em 0.05em 0.07em rgba(0, 64, 255, 0.8);
 }
 
 /*# sourceMappingURL=homenav.css.map */
