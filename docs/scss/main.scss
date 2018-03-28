@@ -40,8 +40,9 @@ h3, h4 {
 	@extend .font-monospace;
 
 	font-weight: normal;
-	border-radius: 3px;
-	background-color: #333;
+	border-radius: 5px;
+	//box-shadow: 0 0 0.5em #333 inset;
+	background-color: #FCFCFC;
 	padding: 0.5em 1em;
 }
 /*--- 段落 ---*/
@@ -52,40 +53,79 @@ p {
 /*--- 装飾 ---*/
 .highlight- {
 	&comment {
-		color: #608b4e;
+		color: #4db91e;
 	}
 	&constant {
-		color: #b5cea8;
+		color: #c6e25f;
 	}
 	&control {
-		color: #c586c0;
+		color: #c34de0;
 	}
 	&html-blackets {
 		color: #808080;
 	}
 	&html-attribute {
-		color: #9cdcfe;
+		color: #4bc8e7;
 	}
 	&keyword {
-		color: #569cd6;
+		color: #307ae9;
 	}
 	&line-number {
 		color: #808080;
 	}
 	&numeric {
-		color: #b5cea8;
+		color: #c6e25f;
 	}
 	&normal {
-		color: #d4d4d4;
+		color: #a0a0a0;
 	}
 	&regexp {
-		color: #d16969;
+		color: #e4553c;
 	}
 	&string {
-		color: #ce9178;
+		color: #e06f42;
 	}
 	&type {
-		color: #4ec9b0;
+		color: #2de0a4;
+	}
+
+	&dark- {
+		&comment {
+			color: #608b4e;
+		}
+		&constant {
+			color: #b5cea8;
+		}
+		&control {
+			color: #c586c0;
+		}
+		&html-blackets {
+			color: #808080;
+		}
+		&html-attribute {
+			color: #9cdcfe;
+		}
+		&keyword {
+			color: #569cd6;
+		}
+		&line-number {
+			color: #808080;
+		}
+		&numeric {
+			color: #b5cea8;
+		}
+		&normal {
+			color: #d4d4d4;
+		}
+		&regexp {
+			color: #d16969;
+		}
+		&string {
+			color: #ce9178;
+		}
+		&type {
+			color: #4ec9b0;
+		}
 	}
 }
 
