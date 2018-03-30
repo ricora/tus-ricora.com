@@ -24,10 +24,10 @@ header:hover {
   color: #FFD;
 }
 header:hover > div:nth-child(1) {
-  text-shadow: 0 0 0.9em #DDA;
+  text-shadow: 0 0 0.9em #EEA;
 }
 header:hover > div:nth-child(2) {
-  text-shadow: 0 0 0.9em #DDA;
+  text-shadow: 0 0 0.9em #EEA;
 }
 
 /*--- 基本スタイル ---*/
@@ -64,8 +64,8 @@ a.unset-link-style {
 /*--- ページの見出し ---*/
 h3, h4 {
   font-weight: normal;
-  border-radius: 3px;
-  background-color: #333;
+  border-radius: 5px;
+  background-color: #FCFCFC;
   padding: 0.5em 1em;
 }
 
@@ -76,39 +76,75 @@ p {
 
 /*--- 装飾 ---*/
 .highlight-comment {
-  color: #608b4e;
+  color: #4db91e;
 }
 .highlight-constant {
-  color: #b5cea8;
+  color: #c6e25f;
 }
 .highlight-control {
-  color: #c586c0;
+  color: #c34de0;
 }
 .highlight-html-blackets {
   color: #808080;
 }
 .highlight-html-attribute {
-  color: #9cdcfe;
+  color: #4bc8e7;
 }
 .highlight-keyword {
-  color: #569cd6;
+  color: #307ae9;
 }
 .highlight-line-number {
   color: #808080;
 }
 .highlight-numeric {
-  color: #b5cea8;
+  color: #c6e25f;
 }
 .highlight-normal {
-  color: #d4d4d4;
+  color: #a0a0a0;
 }
 .highlight-regexp {
-  color: #d16969;
+  color: #e4553c;
 }
 .highlight-string {
-  color: #ce9178;
+  color: #e06f42;
 }
 .highlight-type {
+  color: #2de0a4;
+}
+.highlight-dark-comment {
+  color: #608b4e;
+}
+.highlight-dark-constant {
+  color: #b5cea8;
+}
+.highlight-dark-control {
+  color: #c586c0;
+}
+.highlight-dark-html-blackets {
+  color: #808080;
+}
+.highlight-dark-html-attribute {
+  color: #9cdcfe;
+}
+.highlight-dark-keyword {
+  color: #569cd6;
+}
+.highlight-dark-line-number {
+  color: #808080;
+}
+.highlight-dark-numeric {
+  color: #b5cea8;
+}
+.highlight-dark-normal {
+  color: #d4d4d4;
+}
+.highlight-dark-regexp {
+  color: #d16969;
+}
+.highlight-dark-string {
+  color: #ce9178;
+}
+.highlight-dark-type {
   color: #4ec9b0;
 }
 
