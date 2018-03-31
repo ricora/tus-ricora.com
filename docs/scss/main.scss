@@ -35,6 +35,17 @@ a.unset-link-style {
 	font-family: "Menlo", "Consolas", "Courier New", "Courier", "游ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
 }
 
+/*--- テキスト制御 ---*/
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+
 /*--- ページの見出し ---*/
 h3, h4 {
 	@extend .font-monospace;
