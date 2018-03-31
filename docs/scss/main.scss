@@ -45,7 +45,14 @@ a.unset-link-style {
 .align-right {
 	text-align: right;
 }
-
+p.expand-line-space {
+	margin: {
+		top: 3em;
+	}
+}
+.no-wrap {
+	white-space: nowrap;
+}
 /*--- ページの見出し ---*/
 h3, h4 {
 	@extend .font-monospace;
