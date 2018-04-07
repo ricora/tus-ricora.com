@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 // Imports
-@import "_select";
 
 nav {
 	font-size: 1.2em;
@@ -18,9 +17,9 @@ nav {
 			margin-left: -1em;
 			padding: 0.5em 2em;
 
-			text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
-			box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.0);
-			transition: text-shadow 0.5s, box-shadow 0.5s;
+			text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+			box-shadow: 0.0em 0.0em 0.0em rgba(0, 0, 0, 0.3);
+			transition: text-shadow 0.1s ease-in, box-shadow 0.1s ease-in;
 
 			background-image: url(../img/menuitemArrow.svg);
 			background-position: 0 calc(1em - 20px);
@@ -41,11 +40,9 @@ nav {
 				color: #EEE;
 
 				box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.5);
-				transition: box-shadow 0.5s;
+				transition: box-shadow 0.1s;
 			}
 			&:hover {
-				//@include animation(selectedNoise, 0.2s both);
-
 				text-shadow: 0.05em 0.05em 0.07em rgba(0, 64, 255, 0.8);
 				box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.3);
 
