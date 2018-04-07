@@ -138,7 +138,7 @@ p {
   color: #c6e25f;
 }
 .highlight-normal {
-  color: #808080;
+  color: #404040;
 }
 .highlight-regexp {
   color: #e4553c;
@@ -147,7 +147,7 @@ p {
   color: #e06f42;
 }
 .highlight-type {
-  color: #2de0a4;
+  color: #18c088;
 }
 .highlight-dark-comment {
   color: #608b4e;
@@ -184,6 +184,35 @@ p {
 }
 .highlight-dark-type {
   color: #4ec9b0;
+}
+
+/*--- 順序なしリスト ---*/
+ul {
+  list-style-type: none;
+}
+ul li {
+  position: relative;
+  margin-left: -1em;
+  padding: 0.5em 2em;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+  box-shadow: 0em 0em 0em rgba(0, 0, 0, 0.3);
+  background-image: url(../img/menuitemArrow.svg);
+  background-position: 0 calc(1em - 20px);
+  background-repeat: no-repeat;
+}
+ul li[data-sticker]::after {
+  display: inline-block;
+  content: attr(data-sticker);
+  position: relative;
+  font-size: 0.7em;
+  left: 1em;
+  top: -0.5em;
+  padding: 0em 0.5em;
+  background-clip: padding-box;
+  background-color: rgba(255, 32, 32, 0.8);
+  text-shadow: none;
+  color: #EEE;
+  box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.5);
 }
 
 /*--- 空白強制 (pre) ---*/
