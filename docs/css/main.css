@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*--- ヘッダ部分 ---*/
 header {
+  flex: 0 0 auto;
   background-color: #333;
   color: #EEE;
 }
@@ -34,6 +35,21 @@ header:hover > div:nth-child(2) {
 body {
   margin: 0;
   background-color: #EEE;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body::after {
+  flex: 0 0 auto;
+  display: block;
+  content: "Ricora Programming Team";
+  font-family: "Menlo", "Consolas", "Courier New", "Courier", monospace;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  padding: 1em 0.2em;
+  text-align: center;
+  color: #333;
+  background-color: #444;
 }
 
 @media (max-width: 450px) {
@@ -42,7 +58,8 @@ body {
   }
 }
 main {
-  margin: 1em;
+  flex: 1 1 auto;
+  margin: 0em 1em 1em 1em;
 }
 
 /*--- リンクの見た目 ---*/
@@ -121,7 +138,7 @@ p {
   color: #c6e25f;
 }
 .highlight-normal {
-  color: #a0a0a0;
+  color: #808080;
 }
 .highlight-regexp {
   color: #e4553c;
