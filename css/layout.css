@@ -12,7 +12,7 @@
    n. News Section
    d. activity
    e. Postfolio
-   f. Journal
+   f. blog
    g. About
    h. Call-to-Action
    i. Map
@@ -207,7 +207,17 @@ ul#nav li.active a { color: #11ABB0; }
    padding: 0;
    margin: 0;
 }
-.slider-text h2 span,
+
+.slider-text h4 {
+    font: 28px/39px montserrat-regular, Sans-serif;
+    color: #fff;
+    text-shadow: 0px 1px 5px rgba(50, 50, 50, .5);
+    padding: 0;
+    margin: 0;
+ }
+
+
+.slider-text h2 h4 span,
 .slider-text a { color: #11ABB0; }
 
 .slider-text p {
@@ -327,6 +337,7 @@ ul#nav li.active a { color: #11ABB0; }
    width: 33.33333%;
    margin-bottom: 30px;
 }
+
 .activity-wrapper h2 {
    font: 16px/24px montserrat-bold, sans-serif;
    letter-spacing: 1.5px;
@@ -338,6 +349,7 @@ ul#nav li.active a { color: #11ABB0; }
    font-size: 16px;
    line-height: 30px;
 }
+
 #activity .activity-wrapper i { margin-right: 10px; }
 
 
@@ -463,35 +475,35 @@ ul#nav li.active a { color: #11ABB0; }
 
 /* ================================================================== */
 
-/* f. Journal
+/* f. blog
 
 /* ================================================================== */
 
-#journal {
+#blog {
    background-color: #0f9095;
    padding-top: 156px;
    padding-bottom: 120px;
    color: #7fe6ed;
 }
 
-#journal a, #journal a:visited  { color: #fff; }
-#journal a:hover, #journal a:focus { color: #005757; }
+#blog a, #blog a:visited  { color: #fff; }
+#blog a:hover, #blog a:focus { color: #005757; }
 
-#journal .section-head h2 { color: #fff; }
-#journal .section-head p.desc,
-#journal .section-head .intro { color: #C2F1F5; }
+#blog .section-head h2 { color: #fff; }
+#blog .section-head p.desc,
+#blog .section-head .intro { color: #C2F1F5; }
 
-#journal .blog-entries { margin-top: 54px; }
-#journal .entry { margin-bottom: 12px; }
+#blog .blog-entries { margin-top: 54px; }
+#blog .entry { margin-bottom: 12px; }
 
 /* post header */
-#journal .blog-entries .entry-header {
+#blog .blog-entries .entry-header {
    position: relative;
    margin-bottom: 6px;
 }
-#journal .entry-header .entry-title { padding-left: 38px; }
-#journal .entry-header h3 { font: 30px/42px montserrat-regular, sans-serif; }
-#journal .entry-header .author-image img {
+#blog .entry-header .entry-title { padding-left: 38px; }
+#blog .entry-header h3 { font: 30px/42px montserrat-regular, sans-serif; }
+#blog .entry-header .author-image img {
    position: absolute;
    top: 12px;
    left: 18px;
@@ -507,32 +519,32 @@ ul#nav li.active a { color: #11ABB0; }
 }
 
 /* post meta */
-#journal .entry .post-meta   {
+#blog .entry .post-meta   {
    font: 14px/24px opensans-regular, sans-serif;
    color: #fff;
    margin-top: 12px;
    margin-bottom: 0;
 }
-#journal .entry .post-meta time,
-#journal .entry .post-meta .dauthor {
+#blog .entry .post-meta time,
+#blog .entry .post-meta .dauthor {
    display: block;
 }
-#journal .entry .post-meta time {
+#blog .entry .post-meta time {
    font-family: montserrat-bold, sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
 
 /* post content */
-#journal .entry .post-content { padding-left: 38px; }
-#journal .entry .post-content p {
+#blog .entry .post-content { padding-left: 38px; }
+#blog .entry .post-content p {
    font: 16px/30px opensans-regular, sans-serif;
 }
-#journal .entry .post-content a.more-link {
+#blog .entry .post-content a.more-link {
    font: 15px/30px opensans-bold, sans-serif;
    margin-left: 3px;
 }
-#journal .entry .post-content a.more-link i {
+#blog .entry .post-content a.more-link i {
    margin-left: 10px;
    font-size: 14px;
 }
@@ -708,7 +720,7 @@ ul#nav li.active a { color: #11ABB0; }
 #contact .section-head h2 { color: #11ABB0; }
 #contact .section-head p.desc,
 #contact .intro { color: #57606B; }
-#contact p {  }
+#contact p { position: relative; left: 30px; }
 
 /* contact form */
 #contact form { margin-bottom: 30px; }
@@ -1069,8 +1081,8 @@ ol.commentlist {
 	font-size: 13px;
 }
 
-/* journal bottom nav */
-.journal-bottom-nav {
+/* blog bottom nav */
+.blog-bottom-nav {
    margin-top: 36px;
    margin-left: 16.66667%;
    padding-top: 5px;
@@ -1248,7 +1260,7 @@ footer .social-links li:first-child { margin-left: 0; }
 
    /* adjust sections padding top */
    #activity, #work,
-   #journal, #about { padding-top: 120px; }
+   #blog, #about { padding-top: 120px; }
 
    /* adjust font size */
    .intro, .testimonies .client-cite { font-size: 18px; }
@@ -1269,9 +1281,9 @@ footer .social-links li:first-child { margin-left: 0; }
    #work #work-wrapper { margin-top: 12px; }
    #work #work-wrapper .col { width: 33.33333%; }
 
-   /* journal section
+   /* blog section
    -------------------------------------------------------------------- */
-   #journal .blog-entries { margin-top: 30px; }
+   #blog .blog-entries { margin-top: 30px; }
 
    /* about section
    -------------------------------------------------------------------- */
@@ -1322,7 +1334,7 @@ footer .social-links li:first-child { margin-left: 0; }
 
    /* center align some text */
    .section-head, .intro, #about h3,
-   #journal .entry-header {
+   #blog .entry-header {
       text-align: center;
    }
 
@@ -1426,24 +1438,24 @@ footer .social-links li:first-child { margin-left: 0; }
 		width: 84%;
    }
 
-   /* journal section
+   /* blog section
    --------------------------------------------------------------------- */
-   #journal .entry-header .author-image {
+   #blog .entry-header .author-image {
       display: none;
    }
-   #journal .entry-header .entry-title {
+   #blog .entry-header .entry-title {
       padding-left: 20px;
       margin-bottom: 18px;
    }
-   #journal .entry .post-content {
+   #blog .entry .post-content {
       padding-left: 20px;
       margin-top: 6px;
    }
-   #journal .entry .post-meta time,
-   #journal .entry .post-meta .dauthor {
+   #blog .entry .post-meta time,
+   #blog .entry .post-meta .dauthor {
       display: inline;
    }
-   #journal .entry .post-meta .dauthor:before {
+   #blog .entry .post-meta .dauthor:before {
       content: "/";
       padding-left: 5px;
       padding-right: 5px;
@@ -1597,8 +1609,8 @@ footer .social-links li:first-child { margin-left: 0; }
       width: 100%;
    }
 
-   /* journal bottom nav */
-   .journal-bottom-nav {
+   /* blog bottom nav */
+   .blog-bottom-nav {
       margin-left: 0;
       text-align: center;
    }
@@ -1640,9 +1652,9 @@ footer .social-links li:first-child { margin-left: 0; }
       margin-top: 24px;
    }
 
-    /* journal section
+    /* blog section
    ------------------------------------------------------------------------- */
-   #journal .entry-title h3 {
+   #blog .entry-title h3 {
      font-size: 28px;
      line-height: 36px;
    }
