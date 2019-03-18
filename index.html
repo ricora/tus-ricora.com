@@ -27,13 +27,13 @@
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" >
+	<link rel="shortcut icon" href="images/favicon2.png" >
 
 
 </head>
 
-<body data-spy="scroll" data-target="#nav-wrap">
 
+<body data-spy="scroll" data-target="#nav-wrap">
 
    <!-- Header
    ================================================== -->
@@ -41,18 +41,18 @@
       <div class="row">
          <div class="col full">
             <div class="logo">
-               <a href="#"><img alt="" src="images/logo.png"></a>
+               <a href="#"><img alt="" src="images/logo2.png"></a>
             </div>
             <nav id="nav-wrap">
                <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
                <ul id="nav" class="nav">
-	               <li><a href="#intro">Top</a></li>
+	               <li><a href="#top">Top</a></li>
                    <li><a href="#news">NEWS</a></li>
 	               <li><a href="#activity">Activity</a></li>
 	               <li><a href="#work">Work</a></li>
 	               <li><a href="#blog">Blog</a></li>
-                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#about_us">About Us</a></li>
                   <li><a href="#contact">Contact</a></li>
                </ul>
             </nav>
@@ -63,7 +63,7 @@
 
    <!-- Intro Section
    ================================================== -->
-   <section id="intro">
+   <section id="top">
 
       <!-- Flexslider Start-->
 	   <div id="intro-slider" class="flexslider">
@@ -103,7 +103,15 @@
 	   <!-- Flexslider End-->
 
    </section> <!-- Intro Section End-->
-
+   <section id="console">
+   <div class="row section-head">
+   <div class="col one-third">
+   <h2>Terminal</h2>
+   </div></div>
+   <form onSubmit="move();return false;">
+        <input type="text" id="terminal" placeholder="(例) cat Contact, #include <Activity>" autocomplete="off" >
+   </form>
+   </section>
    <section id="news">
        <div class="row section-head">
          <div class="col one-third">
@@ -370,9 +378,9 @@
    </section>  <!-- blog Section End -->
 
 
-   <!-- About Section
+   <!-- About US Section
    ================================================== -->
-   <section id="about">
+   <section id="about_us">
 
       <div class="row section-head">
 
@@ -521,13 +529,37 @@
                <li><a href="#"><i class="icon-rss-sign"></i></a></li>
             </ul>
          </div>
-
       </div>
 
    </footer> <!-- Footer End-->
-
+   <script type="text/javascript">
+      function move() {
+          var sectionName = [ 'top','news','activity','work','blog','about_us','contact'];
+          var cmd = "";
+          cmd = document.getElementById('terminal').value;
+          var words = cmd.split(' ');
+          if (words.length == 2) {
+             var firstWord = words[0].toLowerCase();
+             var secondWord = words[1].toLowerCase();
+             if ( firstWord === 'more' || firstWord === 'less' || firstWord === 'cat' || firstWord === 'import') {
+                 if (sectionName.includes(secondWord)) {
+                     window.location.hash = "";
+                     window.location.hash = secondWord;
+                     
+                 }
+             }
+             else if (firstWord === '#include') {
+                 var secondWord_r = secondWord.replace('<','').replace('>','');
+                 if (sectionName.includes(secondWord_r)){
+                     window.location.hash = "";
+                     window.location.hash = secondWord_r;
+                 }
+             }
+          }
+      }
+   </script>
    <!-- Java Script
-   ================================================== -->
+================================================== -->
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
