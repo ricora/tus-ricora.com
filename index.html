@@ -27,7 +27,7 @@
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" >
+	<link rel="shortcut icon" href="images/favicon2.png" >
 
 
 </head>
@@ -41,7 +41,7 @@
       <div class="row">
          <div class="col full">
             <div class="logo">
-               <a href="#"><img alt="" src="images/logo.png"></a>
+               <a href="#"><img alt="" src="images/logo2.png"></a>
             </div>
             <nav id="nav-wrap">
                <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -108,8 +108,8 @@
    <div class="col one-third">
    <h2>Terminal</h2>
    </div></div>
-   <form onSubmit="move()">
-        <input type="text" id="terminal" placeholder="(例) cat blog, #include <Activity>, import Contact" autocomplete="off" >
+   <form onSubmit="move();return false;">
+        <input type="text" id="terminal" placeholder="(例) cat Contact, #include <Activity>" autocomplete="off" >
    </form>
    </section>
    <section id="news">
@@ -537,10 +537,7 @@
           var sectionName = [ 'top','news','activity','work','blog','about_us','contact'];
           var cmd = document.getElementById('terminal').value;
           var words = cmd.split(' ');
-          if (words.length != 2) {
-             window.location.hash = "console";
-          }
-          else {
+          if (words.length == 2) {
              var firstWord = words[0].toLowerCase();
              var secondWord = words[1].toLowerCase();
              console.log(secondWord);
@@ -548,21 +545,12 @@
                  if (sectionName.includes(secondWord)) {
                      window.location.hash = secondWord;
                  }
-                 else {
-                     window.location.hash = "console";
-                 }
              }
              else if (firstWord === '#include') {
                  var secondWord_r = secondWord.replace('<','').replace('>','');
                  if (sectionName.includes(secondWord_r)){
                      window.location.hash = secondWord_r;
                  }
-                 else {
-                     window.location.hash = "console";
-                 }
-             }
-             else {
-                 window.location.hash = "console";
              }
           }
       }

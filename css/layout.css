@@ -1588,36 +1588,3 @@ footer .social-links li:first-child { margin-left: 0; }
      background-color: black;
  }
 
-#console h2 {
-    
-}
- /*
- #console button.submit {
-     font: 18px/30px montserrat-bold, sans-serif;
-     text-transform: uppercase;
-     letter-spacing: 3px;
-     color:#fff;
-     background: #11ABB0;
-     padding: 18px 30px;
-     border: none;
-     cursor: pointer;
-     height: auto;
-     display: inline-flexbox;
- 
-     -moz-border-radius: 3px;
-     -webkit-border-radius: 3px;
-     -khtml-border-radius: 3px;
-     border-radius: 3px;
- 
-     margin-left: 22%;
- }
- #console button.submit:hover {
-     color: #25292D;
-     background: #fff;
- }
- #console span.required {
-     color: #11ABB0;
-     font-size: 13px;
- }
- */
-
