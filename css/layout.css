@@ -204,7 +204,7 @@ ul#nav li.active a { color: #11ABB0; }
    font: 56px/78px montserrat-regular, Sans-serif;
    color: #fff;
    text-shadow: 0px 1px 5px rgba(50, 50, 50, .5);
-   padding: 0;
+   padding: 10px;
    margin: 0;
 }
 
