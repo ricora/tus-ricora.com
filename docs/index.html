@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html lang="ja"> <!--<![endif]-->
+<head>
+
+
+   <!--- Basic Page Needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>TOP PAGE</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon2.png" >
+
+
+</head>
+
+
+<body data-spy="scroll" data-target="#nav-wrap">
+
+   <!-- Header
+   ================================================== -->
+   <header class="mobile">
+      <div class="row">
+         <div class="col full">
+            <div class="logo">
+               <a href="#"><img alt="" src="images/logo2.png"></a>
+            </div>
+            <nav id="nav-wrap">
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+               <ul id="nav" class="nav">
+	               <li><a href="#top">Top</a></li>
+                   <li><a href="#news">NEWS</a></li>
+	               <li><a href="#activity">Activity</a></li>
+	               <li><a href="#work">Work</a></li>
+	               <li><a href="#blog">Blog</a></li>
+                  <li><a href="#about_us">About Us</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header> <!-- Header End -->
+
+
+   <!-- Intro Section
+   ================================================== -->
+   <section id="top">
+
+      <!-- Flexslider Start-->
+	   <div id="intro-slider" class="flexslider">
+
+		   <ul class="slides">
+
+			   <!-- Slide -->
+			   <li>
+				   <div class="row">
+					   <div class="col full">
+						   <div class="slider-text">
+							   <h2> 東京理科大学 </h2>
+                               <h2> 電子計算機研究会　言語班 </h2>
+                               <h3> RICORA PROGRAMMING TEAM </h3>
+							   <p> </p>
+						   </div>
+					   </div>
+				   </div>
+			   </li>
+
+            <!-- Slide -->
+			   <li>
+				   <div class="row">
+					   <div class="col full">
+						   <div class="slider-text">
+                               <h4> 毎週火曜日野田キャンパス講義棟にて活動 </h4>
+							   <h2> 活動内容は<a href="#work" title="">こちら</a></h2>
+                               <h2>ぜひお気軽に<a href="#contact" title="">ご参加</a>ください</h2>
+							   <p> <!-- English Comment --> </p>
+						   </div>
+					   </div>
+				   </div>
+			   </li>
+
+		   </ul>
+	   </div>
+	   <!-- Flexslider End-->
+
+   </section> <!-- Intro Section End-->
+   <section id="console">
+   <div class="row section-head">
+   <div class="col one-third">
+   <h2>Terminal</h2>
+   </div></div>
+   <form onSubmit="move();return false;">
+        <input type="text" id="terminal" placeholder="(例) cat Contact, #include <Activity>" autocomplete="off" >
+   </form>
+   </section>
+   <section id="news">
+       <div class="row section-head">
+         <div class="col one-third">
+            <h2>News</h2>
+            <p class="desc">Our latest news.</p>
+         </div>
+
+         <div class="col two-thirds">
+            <div class="intro">
+             <p>
+                最新の活動状況
+              </p>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="news-wrapper">
+            <div class="col">
+                <a class="twitter-timeline" width="400px" height="500px" data-theme="dark" href="https://twitter.com/ricora_alg?ref_src=twsrc%5Etfw">Tweets by ricora_alg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+         </div>
+        <aside>
+            <h2> 新入生の皆さまへ </h2>
+            <p> ご入学おめでとうございます。 </p>
+             <!-- 新歓の時期は新入生に合わせた勧誘文章 -->
+             <!-- それ以外は普通の勧誘文章 -->
+        </aside>
+    </div>
+
+   </section>
+   <!-- activity Section
+   ================================================== -->
+   <section id="activity">
+      <div class="row section-head">
+         <div class="col one-third">
+            <h2>Activity</h2>
+            <p class="desc">Our list of awesome activity.</p>
+         </div>
+
+         <div class="col two-thirds">
+            <div class="intro">
+             <p>
+                2017年度は、AtCoderを用いてデータ構造やアルゴリズムに関する学習を主軸としつつ、セキュリティの学習なども含めた活動を行っていました。
+                2018年度はこの内容を引き継ぎつつ、web開発など、さらに幅広い活動をしていきたいと考えています。
+              </p>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="row">
+
+         <div class="activity-wrapper">
+
+            <div class="col">
+               <h2><i class="icon-pencil"></i>競技プログラミング</h2>
+               <p> 競技プログラミングは、与えられた問題をプログラムを使って解き、解けた問題数や解く素早さ, 正確さを競うものです。
+               アルゴリズムを学ぶことができ、計算時間の見積もりやコーナーケースの処理などの能力が求められます。
+               楽しく競い合いながら、プログラミングスキルを高めることができます。
+
+               </p>
+            </div>
+
+            <div class="col">
+               <h2><i class="icon-expand"></i>LT ( Lightning Talks )</h2>
+               <p> サークルでは、定期的にLTが行われており、サークルメンバーで学んだものを共有します。
+               LTを通じて、様々な分野のプログラミング技術について知ることができます。また、自分で発表を行うことでより自分の理解を深めることもできます。
+                </p>
+            </div>
+
+            <div class="col m-first">
+               <h2><i class="icon-qrcode"></i>CTF</h2>
+               <p>CTFの説明を書く </p>
+            </div>
+
+            <div class="col first">
+               <h2><i class="icon-github-alt"></i>開発(Web , ゲーム等)</h2>
+               <p>開発 の説明を書く。作りたいものがあったら持ってきて仲間を見つけよう的な。</p>
+            </div>
+
+            <div class="col m-first">
+               <h2><i class=" icon-key"></i>ブロックチェーン</h2>
+               <p>ブロックチェーンの説明をかく</p>
+            </div>
+
+            <div class="col">
+               <h2><i class="icon-twitter"></i></h2>
+               <p>なんか書く</p>
+            </div>
+
+         </div> <!-- activity-Wrapper End -->
+
+      </div> <!--end row -->
+
+   </section> <!-- activity Section End -->
+
+
+   <!-- work Section
+   ================================================== -->
+   <section id="work">
+
+      <div class="row section-head">
+         <div class="col full">
+
+            <h2>Work</h2>
+            <p class="desc">Check out our latest projects.</p>
+            <p class="intro">
+            活動記録.(2018)
+            </p>
+
+         </div>
+      </div>
+
+      <div class="row">
+           <div id="work-wrapper">
+           <div class="col work-item">
+                <h4>競技プログラミング</h4>
+                <h5><a href="https://icpc.iisf.or.jp/acm-icpc/">ACM-ICPC 国際大学対抗プログラミングコンテスト</a></h5>
+                <h6>国内予選</h6>
+                <ul>
+                    <li> Team: fukafukaofuton 60位ぐらい </li>
+                    <li> Team: ninJa 150位ぐらい </li>
+                    <li> Team: hoge </li>
+                </ul>
+                <h4><a href="https://atcoder.jp/?lang=ja">AtCoder</a></h4>
+                <ul>
+                    <li> claw88 </li>
+                    <li> thirno3153 </li>
+                    <li> banboooo044 </li>
+                    <li> ACCUP </li>
+                    <li> ravie403 </li>
+                </ul>
+           </div>
+           <div class="col work-item">
+                <h4>LT</h4>
+                スライドを順次アップ予定
+           </div>
+           </div>
+		</div> <!-- End Row -->
+
+   </section> <!-- work End -->
+
+   <!-- blog Section
+   ================================================== -->
+   <section id="blog">
+
+      <div class="row section-head">
+         <div class="col full">
+            <h2>Blog</h2>
+            <p class="desc">Our latest posts and rants.</p>
+         </div>
+      </div>
+
+      <!-- Blog Entries -->
+      <div class="blog-entries">
+
+         <!-- Entry -->
+         <article class="entry">
+
+            <div class="row entry-header">
+
+               <div class="author-image">
+                  <img src="images/user-03.png" alt="Sakura Haruno" />
+               </div>
+
+               <div class="col g-9 offset-1 entry-title">
+                  <h3><a href="blog-single.html">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h3>
+               </div>
+
+               <div class="col g-2">
+                  <p class="post-meta">
+                     <time pubdate="" class="post-date" datetime="2013-08-19">Aug 19, 2013</time>
+                     <span class="dauthor">By Sakura Haruno</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="row">
+
+               <div class="col g-9 offset-1 post-content">
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+                  <a href="blog-single.html" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
+               </div>
+
+            </div>
+
+         </article> <!-- Entry End -->
+
+         <!-- Entry -->
+         <article class="entry">
+
+            <div class="row entry-header">
+
+               <div class="author-image">
+                  <img src="images/user-03.png" alt="John Doe" />
+               </div>
+
+               <div class="col g-9 offset-1 entry-title">
+                  <h3><a href="blog-single.html">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed.</a></h3>
+               </div>
+
+               <div class="col g-2">
+                  <p class="post-meta">
+                     <time pubdate="" class="post-date" datetime="2013-08-09">Aug 9, 2013</time>
+                     <span class="dauthor">By John Doe</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="row">
+
+               <div class="col g-9 offset-1 post-content">
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+                  <a href="blog-single.html" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
+               </div>
+
+            </div>
+
+         </article> <!-- Entry End -->
+
+         <!-- Entry -->
+         <article class="entry">
+
+            <div class="row entry-header">
+
+               <div class="author-image">
+                  <img src="images/user-03.png" alt="Naruto Uzumaki" />
+               </div>
+
+               <div class="col g-9 offset-1 entry-title">
+                  <h3><a href="blog-single.html">Quis autem vel esse eum iure reprehenderit qui in ea voluptate velit esse.</a></h3>
+               </div>
+
+               <div class="col g-2">
+                  <p class="post-meta">
+                     <time pubdate="" class="post-date" datetime="2013-08-07">Aug 7, 2013</time>
+                     <span class="dauthor">By Naruto Uzumaki</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="row">
+
+               <div class="col g-9 offset-1 post-content">
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+                  <a href="blog-single.html" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
+               </div>
+
+            </div>
+
+         </article> <!-- Entry End -->
+
+      </div> <!-- Blog Entries End -->
+
+   </section>  <!-- blog Section End -->
+
+
+   <!-- About US Section
+   ================================================== -->
+   <section id="about_us">
+
+      <div class="row section-head">
+
+         <div class="col one-fourth">
+            <h2>About Us</h2>
+            <p class="desc">This is what we are.</p>
+         </div>
+
+         <div class="col three-fourths">
+            <!-- 何学科が何名とかちゃんと書く 下のはうる覚え -->
+             <p class="intro"> 毎週火曜日の午後6時から東京理科大学野田キャンパス講義棟にて活動しています。
+             RICORA言語班には、情報科学科、物理学科、情報工学科の学生が所属しています。 </p>
+         </div>
+
+      </div>
+
+      <div class="row">
+         <div class="col full"><h3>Meet The Team.</h3></div>
+      </div>
+
+
+      <!-- Team Wrap End -->
+      <div class="row team-wrap">
+
+         <div class="col one-fourth">
+
+            <img src="images/team/team-img-01.jpg" alt=""/>
+
+            <div class"member-name">
+               <h5>Naruto Uzumaki</h5>
+               <span>Director</span>
+            </div>
+
+            <ul class="member-social">
+               <li><a href="#"><i class="icon-facebook"></i></a></li>
+               <li><a href="#"><i class="icon-twitter"></i></a></li>
+               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+               <li><a href="#"><i class="icon-linkedin"></i></a></li>
+               <li><a href="#"><i class="icon-skype"></i></a></li>
+            </ul>
+
+			</div>
+
+         <div class="col one-fourth">
+
+            <img src="images/team/team-img-02.jpg" alt=""/>
+
+            <div class"member-name">
+               <h5>Sakura Haruno</h5>
+               <span>Director</span>
+            </div>
+
+            <ul class="member-social">
+               <li><a href="#"><i class="icon-facebook"></i></a></li>
+               <li><a href="#"><i class="icon-twitter"></i></a></li>
+               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+               <li><a href="#"><i class="icon-linkedin"></i></a></li>
+               <li><a href="#"><i class="icon-skype"></i></a></li>
+            </ul>
+
+			</div>
+
+         <div class="col one-fourth">
+
+            <img src="images/team/team-img-03.jpg" alt=""/>
+
+            <div class"member-name">
+               <h5>Sasuke Uchiha</h5>
+               <span>Senior Web Designer</span>
+            </div>
+
+            <ul class="member-social">
+               <li><a href="#"><i class="icon-facebook"></i></a></li>
+               <li><a href="#"><i class="icon-twitter"></i></a></li>
+               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+               <li><a href="#"><i class="icon-linkedin"></i></a></li>
+               <li><a href="#"><i class="icon-skype"></i></a></li>
+            </ul>
+
+			</div>
+
+         <div class="col one-fourth">
+
+            <img src="images/team/team-img-03.jpg" alt=""/>
+
+            <div class"member-name">
+               <h5>Shikamaru Nara</h5>
+               <span>Web Designer</span>
+            </div>
+
+            <ul class="member-social">
+               <li><a href="#"><i class="icon-facebook"></i></a></li>
+               <li><a href="#"><i class="icon-twitter"></i></a></li>
+               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+               <li><a href="#"><i class="icon-linkedin"></i></a></li>
+               <li><a href="#"><i class="icon-skype"></i></a></li>
+            </ul>
+
+			</div>
+
+      </div> <!-- Team Wrap End -->
+
+
+   </section> <!-- About Section End-->
+
+    <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+      <div class="row section-head">
+         <div class="col full">
+            <h2>Contact Us</h2>
+            <p class="desc">Get in touch with us.</p>
+         </div>
+      </div>
+      <div class="row">
+        <p>東京理科大学 電子計算機研究会　(RICORA) 言語班 </p>
+
+        <p>
+        毎週火曜日野田キャンパス講義棟にて活動しています。<br />
+        場所は公式Twitterで発信しております。ぜひお気軽にお立ち寄りください。<br />
+        <i class="icon-twitter" > </i> <a href="https://twitter.com/ricora_alg"> 公式twitter </a> DM等
+        </p>
+      </div>
+
+   </section> <!-- Contact Section End-->
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="col g-7">
+            <ul class="copyright">
+               <li>&copy; 2014 Kreative</li>
+               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout">Styleshout</a></li>               
+            </ul>
+         </div>
+
+         <div class="col g-5 pull-right">
+            <ul class="social-links">
+               <li><a href="#"><i class="icon-facebook"></i></a></li>
+               <li><a href="https://twitter.com/ricora_alg"><i class="icon-twitter"></i></a></li>
+               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
+               <li><a href="#"><i class="icon-linkedin"></i></a></li>
+               <li><a href="#"><i class="icon-skype"></i></a></li>
+               <li><a href="#"><i class="icon-rss-sign"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+   </footer> <!-- Footer End-->
+   <script type="text/javascript">
+      function move() {
+          var sectionName = [ 'top','news','activity','work','blog','about_us','contact'];
+          var cmd = "";
+          cmd = document.getElementById('terminal').value;
+          var words = cmd.split(' ');
+          if (words.length == 2) {
+             var firstWord = words[0].toLowerCase();
+             var secondWord = words[1].toLowerCase();
+             if ( firstWord === 'more' || firstWord === 'less' || firstWord === 'cat' || firstWord === 'import') {
+                 if (sectionName.includes(secondWord)) {
+                     window.location.hash = "";
+                     window.location.hash = secondWord;
+                     
+                 }
+             }
+             else if (firstWord === '#include') {
+                 var secondWord_r = secondWord.replace('<','').replace('>','');
+                 if (sectionName.includes(secondWord_r)){
+                     window.location.hash = "";
+                     window.location.hash = secondWord_r;
+                 }
+             }
+          }
+      }
+   </script>
+   <!-- Java Script
+================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/scrollspy.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.reveal.js"></script>
+   <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+   <script src="js/gmaps.js"></script>
+   <script src="js/init.js"></script>
+   <script src="js/smoothscrolling.js"></script>
+</body>
+</html>
