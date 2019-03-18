@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAIA,GAAI;EACH,SAAS,EAAE,KAAK;;AAGf,UAAE;EACD,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,KAAK;;AAEvB,WAAG;EACF,UAAU,EAAE,iDAAiD;;AAE7D,gCAAuB;EACtB,UAAU,EAAE,eAAe;;AAE5B,iBAAQ;EACP,WAAW,EAAE,0CAA0C;EACvD,UAAU,EAAE,oCAAoC;;AAEhD,sCAAuB;EACtB,UAAU,EAAE,0CAA0C",
-"sources": ["../scss/homenav.scss"],
-"names": [],
-"file": "homenav.css"
-}
