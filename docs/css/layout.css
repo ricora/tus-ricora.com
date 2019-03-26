@@ -311,6 +311,10 @@ ul#nav li.active a { color: #11ABB0; }
  }
  #news .news-wrapper i { margin-right: 10px; }
 
+#news .invitation ul {
+    text-align: center;
+    color: magenta;
+}
 
 /* ================================================================== */
 
@@ -322,7 +326,7 @@ ul#nav li.active a { color: #11ABB0; }
    background: #1b1e21 url(../images/patterns/activity-bg.png);
    padding-top: 156px;
    padding-bottom: 120px;
-   color: #4E565F;
+   color: #92a0af;
 }
 
 #activity a, #activity a:visited  { color: #C4C4C4; }
@@ -364,6 +368,7 @@ ul#nav li.active a { color: #11ABB0; }
    padding-top: 156px;
    padding-bottom: 120px;
 }
+
 #work .section-head h2 { color: #0f9095; }
 #work .section-head p.desc { color: #999999; }
 #work .section-head .intro { color: #A3A3A3; }
@@ -398,9 +403,13 @@ ul#nav li.active a { color: #11ABB0; }
 .work-item .work-item-meta { padding: 12px 0; }
 .work-item .work-item-meta h5 a {
    font: 13px/24px montserrat-bold, sans-serif;
-   color: #0f9095;
+   color: #00CCCC;
    margin-left: 7%;
 }
+.work-item ul li a {
+    color: #999999;
+}
+
 
 /* on hover */
 .work-item:hover .item-wrap { background-color: black; }
@@ -610,6 +619,10 @@ ul#nav li.active a { color: #11ABB0; }
 #about_us .team-wrap .member-social li a { color: #8C8C8C; }
 #about_us .team-wrap .member-social li a:hover { color: #0f9095; }
 
+#about_us .team-wrap a img {
+    width: 100px;
+    height: 100px;
+}
 
 /* Testimonials
 /* ------------------------------------------------------------------ */

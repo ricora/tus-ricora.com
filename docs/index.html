@@ -19,7 +19,7 @@
 	<!-- CSS
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/layout.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -133,11 +133,21 @@
                 <a class="twitter-timeline" width="400px" height="500px" data-theme="dark" href="https://twitter.com/ricora_alg?ref_src=twsrc%5Etfw">Tweets by ricora_alg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
             </div>
          </div>
-        <aside>
+        <aside class="invitation">
             <h2> 新入生の皆さまへ </h2>
-            <p> ご入学おめでとうございます。 </p>
-             <!-- 新歓の時期は新入生に合わせた勧誘文章 -->
-             <!-- それ以外は普通の勧誘文章 -->
+            <p> ご入学おめでとうございます。</p>
+            <p>
+            RICORA言語班は、プログラミングが好きな人が集まって開発や情報共有、交流を行うことを目的としたサークルです。<br>
+            アプリケーションやゲームの開発仲間集め、LTなどを通した勉強会、サークル内でのプログラミングコンテスト企画、外部コンテストへの参加などの活動があります。<br>
+            わからないことを気軽に質問することができ、お互いに教え合いながら楽しく勉強を進めていくことができます。
+            </p>
+            <p> 新入生や在校生の方で、</p>
+            <ul>
+            <li> プログラミングが好きな人
+            <li> プログラミングを始めたい人
+            <li> 今年から何か新しいことを始めたい人
+            </ul>
+            <p>はぜひ一度参加をオススメします。</p>
         </aside>
     </div>
 
@@ -154,8 +164,8 @@
          <div class="col two-thirds">
             <div class="intro">
              <p>
-                2017年度は、AtCoderを用いてデータ構造やアルゴリズムに関する学習を主軸としつつ、セキュリティの学習なども含めた活動を行っていました。
-                2018年度はこの内容を引き継ぎつつ、web開発など、さらに幅広い活動をしていきたいと考えています。
+                2018年度は、主にAtCoderを用いてデータ構造やアルゴリズムに関する学習、ICPCへの参加、LTを通じた様々な分野の情報共有を行いました。
+                2019年度はこの内容を引き継ぎつつ、より幅広い活動をしていきます。
               </p>
             </div>
          </div>
@@ -183,23 +193,31 @@
             </div>
 
             <div class="col m-first">
-               <h2><i class="icon-qrcode"></i>CTF</h2>
-               <p>CTFの説明を書く </p>
+               <h2><i class="icon-qrcode"></i>CTF( Capture The Flag )</h2>
+               <p> セキュリティを主としたコンピュータスキル全般の技術を用いてFlag(答え)を探す競技です。
+               セキュリティといっても様々な分野の知識が必要です。例えば、
+               <ol>
+               <li> プログラムの脆弱性をつくPwn
+               <li> アセンブリ言語を読んだり、逆アセンブルなどをして解析するReversing
+               <li> 暗号技術に関するCrypt
+               <li> webの脆弱性をつくweb
+               </ol> などがあります。楽しくセキュリティの知識をつけることができます。 </p>
             </div>
 
             <div class="col first">
                <h2><i class="icon-github-alt"></i>開発(Web , ゲーム等)</h2>
-               <p>開発 の説明を書く。作りたいものがあったら持ってきて仲間を見つけよう的な。</p>
+               <p> サークルの活動を通して、Webやゲーム等の開発仲間を集め、開発を行うことができます。
+               開発の案を持った人がサークル内で自分の企画を発表し、それに興味を持った人と一緒に開発を行うといった流れで開発チームを作ることができます。
+               授業課題などは基本的に1人で行うため、複数人で共同開発する経験は学生のうちは貴重な経験となるはずです。
+               </p>
             </div>
 
             <div class="col m-first">
                <h2><i class=" icon-key"></i>ブロックチェーン</h2>
-               <p>ブロックチェーンの説明をかく</p>
-            </div>
-
-            <div class="col">
-               <h2><i class="icon-twitter"></i></h2>
-               <p>なんか書く</p>
+               <p> ブロックチェーンとは分散型管理台帳のことで、従来の１つのサーバーにデータを保存する中央集権型とは違ってたくさんのデータ管理者がそれぞれデータの整合性を確かめながらデータを保存していくものです。
+                   すでに出来上がっているデータ群にデータを加えていく様から、データをブロック状にチェーンで繋げていく、ということでブロックチェーンという名前がついています。
+                   ブロックチェーン技術を利用したアプリケーション開発を行なっていきます。
+               </p>
             </div>
 
          </div> <!-- activity-Wrapper End -->
@@ -232,22 +250,24 @@
                 <h5><a href="https://icpc.iisf.or.jp/acm-icpc/">ACM-ICPC 国際大学対抗プログラミングコンテスト</a></h5>
                 <h6>国内予選</h6>
                 <ul>
-                    <li> Team: fukafukaofuton 60位ぐらい </li>
-                    <li> Team: ninJa 150位ぐらい </li>
-                    <li> Team: hoge </li>
+                    <li> Team: 	fukafuka_ofuton 69位 </li>
+                    <li> Team: 	NinJA 185位 </li>
+                    <li> Team:  Sk2 254位 </li>
                 </ul>
-                <h4><a href="https://atcoder.jp/?lang=ja">AtCoder</a></h4>
+                <h5><a href="https://atcoder.jp/?lang=ja">AtCoder</a></h5>
                 <ul>
-                    <li> claw88 </li>
-                    <li> thirno3153 </li>
-                    <li> banboooo044 </li>
-                    <li> ACCUP </li>
-                    <li> ravie403 </li>
+                    <li> <a href="https://atcoder.jp/users/claw88">claw88</a> </li>
+                    <li> <a href="https://atcoder.jp/users/thirno3153">thirno3153</a> </li>
+                    <li> <a href="https://atcoder.jp/users/banboooo044">banboooo044</a> </li>
                 </ul>
            </div>
            <div class="col work-item">
                 <h4>LT</h4>
-                スライドを順次アップ予定
+                <ul>
+                    <li><a href="./LT/tmux.pdf">tmuxで快適生活</li>
+                    <li><a href="./LT/blockChain.pdf">今流行りのブロックチェーンとは ~分散型ネットワークのすすめ~</a></li>
+
+                </ul>
            </div>
            </div>
 		</div> <!-- End Row -->
@@ -264,116 +284,7 @@
             <p class="desc">Our latest posts and rants.</p>
          </div>
       </div>
-
-      <!-- Blog Entries -->
-      <div class="blog-entries">
-
-         <!-- Entry1 -->
-         <article class="entry">
-           
-            <div class="row entry-header">
-
-               <div class="author-image">
-                  <img src="images/user-03.png" alt="Sakura Haruno" />
-               </div>
-
-               <div class="col g-9 offset-1 entry-title">
-                  <h3><a href="blog-single.html">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h3>
-               </div>
-
-               <div class="col g-2">
-                  <p class="post-meta">
-                     <time pubdate="" class="post-date" datetime="2013-08-19">Aug 19, 2013</time>
-                     <span class="dauthor">By Sakura Haruno</span>
-                  </p>
-               </div>
-
-            </div>
-
-            <div class="row">
-
-               <div class="col g-9 offset-1 post-content">
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-                  <a href="blog-single.html" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
-               </div>
-
-            </div>
-
-         </article> <!-- Entry1 End -->
-
-         <!-- Entry2 -->
-         <article class="entry">
-
-            <div class="row entry-header">
-
-               <div class="author-image">
-                  <img src="images/user-03.png" alt="John Doe" />
-               </div>
-
-               <div class="col g-9 offset-1 entry-title">
-                  <h3><a href="blog-single.html">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed.</a></h3>
-               </div>
-
-               <div class="col g-2">
-                  <p class="post-meta">
-                     <time pubdate="" class="post-date" datetime="2013-08-09">Aug 9, 2013</time>
-                     <span class="dauthor">By John Doe</span>
-                  </p>
-               </div>
-
-            </div>
-
-            <div class="row">
-
-               <div class="col g-9 offset-1 post-content">
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-                  <a href="blog-single.html" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
-               </div>
-
-            </div>
-
-         </article> <!-- Entry2 End -->
-
-         <!-- Entry3 -->
-         <article class="entry">
-
-            <div class="row entry-header">
-
-               <div class="author-image">
-                  <img src="images/user-03.png" alt="Naruto Uzumaki" />
-               </div>
-
-               <div class="col g-9 offset-1 entry-title">
-                  <h3><a href="blog-single.html">Quis autem vel esse eum iure reprehenderit qui in ea voluptate velit esse.</a></h3>
-               </div>
-
-               <div class="col g-2">
-                  <p class="post-meta">
-                     <time pubdate="" class="post-date" datetime="2013-08-07">Aug 7, 2013</time>
-                     <span class="dauthor">By Naruto Uzumaki</span>
-                  </p>
-               </div>
-
-            </div>
-
-            <div class="row">
-
-               <div class="col g-9 offset-1 post-content">
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-                  <a href="blog-single.html" class="more-link">Read More<i class="icon-angle-right"></i></a></p>
-               </div>
-
-            </div>
-
-         </article> <!-- Entry3 End -->
-
-      </div> <!-- Blog Entries End -->
+      <center>工事中...</center>
 
    </section>  <!-- blog Section End -->
 
@@ -391,95 +302,40 @@
 
          <div class="col three-fourths">
             <!-- 何学科が何名とかちゃんと書く 下のはうる覚え -->
-             <p class="intro"> 毎週火曜日の午後6時から東京理科大学野田キャンパス講義棟にて活動しています。
-             RICORA言語班には、情報科学科、物理学科、情報工学科の学生が所属しています。 </p>
+             <p class="intro"> 毎週火曜日の午後6時から東京理科大学野田キャンパス講義棟にて活動しています。 </p>
          </div>
-
       </div>
 
       <div class="row">
-         <div class="col full"><h3>Meet The Team.</h3></div>
+         <div class="col full"><h3>Follow Members.</h3></div>
       </div>
 
 
       <!-- Team Wrap End -->
       <div class="row team-wrap">
 
-         <div class="col one-fourth">
+         <div class="col one-sixth">
 
-            <img src="images/team/team-img-01.jpg" alt=""/>
+            <a href="https://twitter.com/AG0D0R1RV/"><img src="twitter/AG0D0R1RV.jpg" alt=""/></a>
 
-            <div class"member-name">
-               <h5>Naruto Uzumaki</h5>
-               <span>Director</span>
-            </div>
+		</div>
 
-            <ul class="member-social">
-               <li><a href="#"><i class="icon-facebook"></i></a></li>
-               <li><a href="#"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li><a href="#"><i class="icon-skype"></i></a></li>
-            </ul>
+         <div class="col one-sixth">
 
-			</div>
+            <a href="https://twitter.com/claw_88"><img src="twitter/claw_88.jpg" alt=""/></a>
 
-         <div class="col one-fourth">
+		</div>
 
-            <img src="images/team/team-img-02.jpg" alt=""/>
+         <div class="col one-sixth">
 
-            <div class"member-name">
-               <h5>Sakura Haruno</h5>
-               <span>Director</span>
-            </div>
+            <a href="https://twitter.com/CuriousFairy315"><img src="twitter/CuriousFairy315.jpg" alt=""/></a>
 
-            <ul class="member-social">
-               <li><a href="#"><i class="icon-facebook"></i></a></li>
-               <li><a href="#"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li><a href="#"><i class="icon-skype"></i></a></li>
-            </ul>
+		</div>
 
-			</div>
+         <div class="col one-sixth">
 
-         <div class="col one-fourth">
-
-            <img src="images/team/team-img-03.jpg" alt=""/>
-
-            <div class"member-name">
-               <h5>Sasuke Uchiha</h5>
-               <span>Senior Web Designer</span>
-            </div>
-
-            <ul class="member-social">
-               <li><a href="#"><i class="icon-facebook"></i></a></li>
-               <li><a href="#"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li><a href="#"><i class="icon-skype"></i></a></li>
-            </ul>
-
-			</div>
-
-         <div class="col one-fourth">
-
-            <img src="images/team/team-img-03.jpg" alt=""/>
-
-            <div class"member-name">
-               <h5>Shikamaru Nara</h5>
-               <span>Web Designer</span>
-            </div>
-
-            <ul class="member-social">
-               <li><a href="#"><i class="icon-facebook"></i></a></li>
-               <li><a href="#"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li><a href="#"><i class="icon-skype"></i></a></li>
-            </ul>
-
-			</div>
+            <a href="https://twitter.com/KoshStorm"><img src="twitter/KoshStorm.jpg" alt=""/></a>
+		</div>
 
       </div> <!-- Team Wrap End -->
 
@@ -499,9 +355,9 @@
         <p>東京理科大学 電子計算機研究会　(RICORA) 言語班 </p>
 
         <p>
-        毎週火曜日野田キャンパス講義棟にて活動しています。<br />
+        毎週火曜日野田キャンパス講義棟にて活動しています。<br/>
         場所は公式Twitterで発信しております。ぜひお気軽にお立ち寄りください。<br />
-        <i class="icon-twitter" > </i> <a href="https://twitter.com/ricora_alg"> 公式twitter </a> DM等
+        <i class="icon-twitter" > </i> <a href="https://twitter.com/ricora_alg"> 公式twitter </a>
         </p>
       </div>
 
@@ -516,17 +372,6 @@
             <ul class="copyright">
                <li>&copy; 2014 Kreative</li>
                <li>Design by <a href="http://www.styleshout.com/" title="Styleshout">Styleshout</a></li>               
-            </ul>
-         </div>
-
-         <div class="col g-5 pull-right">
-            <ul class="social-links">
-               <li><a href="#"><i class="icon-facebook"></i></a></li>
-               <li><a href="https://twitter.com/ricora_alg"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li><a href="#"><i class="icon-skype"></i></a></li>
-               <li><a href="#"><i class="icon-rss-sign"></i></a></li>
             </ul>
          </div>
       </div>
