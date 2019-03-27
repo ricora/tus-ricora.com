@@ -4,7 +4,7 @@ var JSRSS = function() {
 
     this.loadXML = function(str) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', '../php/translate.php?url=' + encodeURIComponent(str), true);
+        xhr.open('GET', '../php/translate.php?url=' + encodeURI(str), true);
         xhr.send();
         var self = this;
         xhr.onreadystatechange = function() {
