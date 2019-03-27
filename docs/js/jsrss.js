@@ -4,15 +4,15 @@ var JSRSS = function() {
 
     this.loadXML = function(str) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', str, true);
+        xhr.open('GET', '../php/translate.php?url=' + encodeURIComponent(str), true);
         xhr.send();
         var self = this;
         xhr.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
                 self.loadXMLfromString(this.responseText);
-            }/* else {
+            } else {
                 console.log("status = " + this.status);
-            }*/
+            }
         }
         return this;
     }
