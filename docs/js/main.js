@@ -1,5 +1,5 @@
-var rss1 = '../feed';
-var rss2 = '../feed2';
+var rss1 = 'https://agodoriru.hatenablog.com/feed';
+var rss2 = 'http://banboooo.hatenablog.com/feed';
 
 var process = function(entries) {
     // 必ず onload 後に実行される
