@@ -134,6 +134,5 @@ var JSRSS = function() {
         }
         return c;
     }
-
     return this;
 }
