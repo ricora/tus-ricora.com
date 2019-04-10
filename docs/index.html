@@ -24,8 +24,6 @@
 
 <!-- Favicons ================================================== -->
 <link rel="shortcut icon" href="images/favicon2.png" >
-<script src="js/jsrss.js"></script>
-
 
 </head>
 
@@ -102,10 +100,15 @@
   <div class="row section-head">
     <div class="col one-third">
       <h2>Terminal</h2>
-    </div></div>
+    </div>
+    <div class="col full">
     <form onSubmit="move();return false;">
+      <center>
       <input type="text" id="terminal" placeholder="(例) cat Contact, #include <Activity>" autocomplete="off" >
+      </center>
     </form>
+    </div>
+  </div>
 </section>
 <section id="news">
   <div class="row section-head">
@@ -124,11 +127,11 @@
   </div>
   <div class="row">
     <div class="news-wrapper">
-      <div class="col">
+      <div class="col half">
         <a class="twitter-timeline" width="400px" height="500px" data-theme="dark" href="https://twitter.com/ricora_alg?ref_src=twsrc%5Etfw">Tweets by ricora_alg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
       </div>
     </div>
-    <aside class="invitation">
+    <div class="col half">
       <h2> 新入生の皆さまへ </h2>
       <p> ご入学おめでとうございます。</p>
       <p>
@@ -143,7 +146,7 @@
         <li> 今年から何か新しいことを始めたい人
       </ul>
       <p>はぜひ一度参加をオススメします。</p>
-    </aside>
+    </div>
   </div>
 
 </section>
@@ -273,7 +276,6 @@
 
 <!-- blog Section ================================================== -->
 <section id="blog">
-  <!-- <script type="text/javascript" src="js/main.js"></script> -->
 
   <div class="row section-head">
 
@@ -285,8 +287,7 @@
     <div class="col two-thirds">
       <div class="intro">
         <p>
-        <!--メンバーの個人ブログです. -->
-        工事中
+        メンバーの個人ブログです.
         </p>
       </div>
     </div>
@@ -295,8 +296,8 @@
 
   <!-- Blog Entries -->
   <div class="blog-entries">
-    
-  </div> <!-- Blog Entries End -->
+  <center> <p> now loading... </p> </center>
+  </div>
    
 </section>  <!-- blog Section End -->
 
@@ -324,30 +325,50 @@
 
   <!-- Team Wrap Start -->
   <div class="row team-wrap">
-
+    <center>
     <div class="col one-sixth">
       <a href="https://twitter.com/AG0D0R1RV/"><img src="twitter/AG0D0R1RV.jpg" alt=""/></a>
+      <div class"member-name">
+           <a href="https://twitter.com/AG0D0R1RV/"><h5> アゴドリル </h5></a>
+      </div>
     </div>
+    
 
     <div class="col one-sixth">
       <a href="https://twitter.com/claw_88"><img src="twitter/claw_88.jpg" alt=""/></a>
+      <div class"member-name">
+           <a href="https://twitter.com/claw_88"><h5> クロー </h5></a>
+      </div>
     </div>
 
     <div class="col one-sixth">
       <a href="https://twitter.com/CuriousFairy315"><img src="twitter/CuriousFairy315.jpg" alt=""/></a>
+      <div class"member-name">
+           <a href="https://twitter.com/CuriousFairy315"><h5> 31536000 </h5></a>
+      </div>
     </div>
 
     <div class="col one-sixth">
       <a href="https://twitter.com/KoshStorm"><img src="twitter/KoshStorm.jpg" alt=""/></a>
+      <div class"member-name">
+           <a href="https://twitter.com/KoshStorm"><h5> ノコノコ </h5></a>
+      </div>
     </div>
 
     <div class="col one-sixth">
       <a href="https://twitter.com/kaido_0203"><img src="twitter/kaido_0203.jpg" alt=""/></a>
+      <div class"member-name">
+           <a href="https://twitter.com/kaido_0203"><h5> かいどー </h5></a>
+      </div>
     </div>
 
     <div class="col one-sixth">
       <a href="https://twitter.com/Drei_Mandarinen"><img src="twitter/Drei_Mandarinen.jpg" alt=""/></a>
+      <div class"member-name">
+           <a href="https://twitter.com/Drei_Mandarinen"><h5> 三条 </h5></a>
+      </div>
     </div>
+    </center>
 
   </div> <!-- Team Wrap End -->
 
@@ -362,13 +383,15 @@
     </div>
   </div>
   <div class="row">
-    <p>東京理科大学 電子計算機研究会　(RICORA) 言語班 </p>
+    <div class="col full">
+    <p> 東京理科大学 電子計算機研究会(RICORA) 言語班 </p>
 
     <p>
     毎週火曜日野田キャンパス講義棟にて活動しています。<br/>
     場所は公式Twitterで発信しております。ぜひお気軽にお立ち寄りください。<br />
     <i class="icon-twitter"></i> <a href="https://twitter.com/ricora_alg"> 公式twitter </a>
     </p>
+    </div>
   </div>
 
 </section> <!-- Contact Section End-->
@@ -423,5 +446,6 @@
 <script src="js/gmaps.js"></script>
 <script src="js/init.js"></script>
 <script src="js/smoothscrolling.js"></script>
+<script src="js/jsrss.js" type="text/javascript"></script>
 </body>
 </html>
