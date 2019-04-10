@@ -311,7 +311,7 @@ ul#nav li.active a { color: #11ABB0; }
 }
 #news .news-wrapper i { margin-right: 10px; }
 
-#news .invitation ul {
+#news .half ul {
   text-align: center;
   color: magenta;
 }
@@ -570,6 +570,7 @@ ul#nav li.active a { color: #11ABB0; }
   padding-top: 156px;
   padding-bottom: 144px;
   color: #A3A3A3;
+  text-align: center;
 }
 #about_us .section-head h2,
 #about_us h4, #about_us h5 { color: #0f9095; }
@@ -1235,7 +1236,7 @@ footer .social-links li:first-child { margin-left: 0; }
 @media only screen and (max-width: 767px) {
 
   /* center align some text */
-  .section-head, .intro, #about_us h3,
+  .section-head, .intro, #about_us ,
   #blog .entry-header {
     text-align: center;
   }
@@ -1557,6 +1558,7 @@ footer .social-links { margin-top: 12px; }
 
 
 /* contact form */
+
 #console {
   background: #1b1e21;
   padding-top: 156px;
@@ -1570,13 +1572,13 @@ footer .social-links { margin-top: 12px; }
   color: #fff;
   display: inline-block;
   float: left;
-  width: 22%;
 }
 
-#console  form {
+#console form {
+  align-content: center;
   margin-top: 30px;
-  margin-left: 30%;
 }
+
 #console  form label {
   font: 14px/24px opensans-bold, sans-serif;
   margin: 12px 0;
@@ -1593,11 +1595,9 @@ footer .social-links { margin-top: 12px; }
   outline: none;
   font-size: 15px;
   line-height: 24px;
-  width: 50%;
 }
 #console input:focus,
 #console select:focus {
   color: greenyellow;
   background-color: black;
 }
-
