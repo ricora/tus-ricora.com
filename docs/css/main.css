@@ -1,54 +1,94 @@
+body {
+  color: #000C;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
 header {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background: #1b1e21;
-}
-
-header h1 {
-  position: absolute;
-  top: 20vh;
-  font-size: 30vh;
-  font-weight: bold;
-  font-style: italic;
-  color: #FFF1;
-}
-
-header .team-name-wrapper {
-  max-width: 960px;
+  padding: 5rem 1rem;
+  max-width: 1440px;
   margin: 0 auto;
-  position: relative;
 }
 
-header .team-name {
-  position: absolute;
-  top: 50vh;
+header h1:first-child {
+  margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
-header .team-name h2 {
-  text-align: right;
-  font-size: 10vh;
+header h1:last-child {
+  font-size: 4rem;
   font-weight: bold;
-  color: #11ABB0;
 }
 
-.topic-wrapper {
-  padding: 1rem 0;
+
+.topic-header {
+  margin: 4rem auto 0;
+  padding: 1rem 1rem;
+  max-width: 1440px;
+}
+
+.topic-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .topic {
-  max-width: 960px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 0.5rem;
+  padding: 1rem 1rem;
+  position: relative;
 }
 
-.topic h3 {
-  font-size: 1.5rem;
+.topic.activity h3 {
+  color: #0001;
+  font-size: 6rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-  color: #11ABB0;
+  font-style: italic;
+  position: absolute;
 }
 
-.topic p {
-  margin-top: 0.75rem;
+.topic.activity ul {
+  padding: 1rem 3rem;
+}
+
+.topic.activity li {
+  font-size: 1.25rem;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.topic.info table {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.topic.info tr {
+  line-height: 2rem;
+  border-bottom: 1px solid #0003;
+}
+
+.topic.info tr:last-child {
+  border-bottom: none;
+}
+
+.topic.info th, .topic.info td {
+  padding: 1rem;
+}
+
+.topic.info th {
+  font-weight: bold;
+  text-align: left;
+}
+
+.topic.info a {
+  text-decoration: underline;
+}
+.topic.info a:hover {
+  text-decoration: unset;
 }
