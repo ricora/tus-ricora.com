@@ -84,6 +84,7 @@ header h1:last-child {
 .topic.info th {
   font-weight: bold;
   text-align: left;
+  white-space: nowrap;
 }
 
 .topic.info a {
