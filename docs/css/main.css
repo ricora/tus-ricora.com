@@ -68,13 +68,25 @@ header h1:last-child {
 }
 
 .topic.activity ul {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 }
 
 .topic.activity li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #0003;
+}
+.topic.activity li:last-child {
+  margin-bottom: 0;
+}
+
+.topic.activity li h4 {
   font-size: 1.25rem;
-  line-height: 2;
   font-weight: bold;
+}
+
+.topic.activity li p {
+  margin: 1rem 0 0;
 }
 
 .topic.info table {
