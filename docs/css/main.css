@@ -37,7 +37,13 @@ header h1:last-child {
   flex-grow: 1;
   height: 1px;
   background: #0003;
-  margin: 1.2rem 1rem 0;
+  margin: 1.2rem 0 0;
+}
+.topic-header::before {
+  margin-right: 1.5rem;
+}
+.topic-header::after {
+  margin-left: 1.5rem;
 }
 
 .topic-header h2 {
