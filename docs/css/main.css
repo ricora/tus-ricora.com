@@ -28,6 +28,16 @@ header h1:last-child {
   margin: 4rem auto 0;
   padding: 1rem 1rem;
   max-width: 960px;
+  display: flex;
+}
+
+.topic-header::before,
+.topic-header::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #0003;
+  margin: 1.2rem 1rem 0;
 }
 
 .topic-header h2 {
