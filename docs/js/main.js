@@ -1,5 +1,5 @@
-const activityListHeaders = document.querySelectorAll(".topic.activity li h4");
-const activityListParagraphs = document.querySelectorAll(".topic.activity li p");
+const toggleHeaders = document.querySelectorAll(".toggle h4");
+const toggleParagraphs = document.querySelectorAll(".toggle p");
 const joinButton = document.querySelector(".fixed-screen.join a");
 
 const cycle = async (ms, f) => {
@@ -31,8 +31,8 @@ const cssPropTrans = async (elm, cssProp, ms, from, to, unit = (v) => { return v
 };
 
 const openParagraph = async (i) => {
-  const p = activityListParagraphs[i];
-  const h = activityListHeaders[i];
+  const p = toggleParagraphs[i];
+  const h = toggleHeaders[i];
   if (!p.style.isEasing) {
     p.style.isEasing = true;
     p.style.opacity = 0;
@@ -47,8 +47,8 @@ const openParagraph = async (i) => {
 };
 
 const closePragraph = async (i) => {
-  const p = activityListParagraphs[i];
-  const h = activityListHeaders[i];
+  const p = toggleParagraphs[i];
+  const h = toggleHeaders[i];
   if (!p.style.isEasing) {
     p.style.isEasing = true;
     await Promise.all([
@@ -79,14 +79,14 @@ const collapseJoinButton = async () => {
   }
 };
 
-activityListHeaders.forEach((_, i) => {
+toggleHeaders.forEach((_, i) => {
   const downIcon = document.createElement("img");
   downIcon.setAttribute("src", "./icon/down.svg");
-  activityListHeaders[i].appendChild(downIcon);
-  activityListHeaders[i].downIcon = activityListHeaders[i].lastElementChild;
+  toggleHeaders[i].appendChild(downIcon);
+  toggleHeaders[i].downIcon = toggleHeaders[i].lastElementChild;
 
-  activityListHeaders[i].addEventListener("click", () => {
-    if (activityListParagraphs[i].style.display === "none") {
+  toggleHeaders[i].addEventListener("click", () => {
+    if (toggleParagraphs[i].style.display === "none") {
       openParagraph(i);
     } else {
       closePragraph(i);
