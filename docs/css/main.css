@@ -39,10 +39,10 @@ header h1:last-child {
   background: #0003;
 }
 .topic-header::before {
-  margin: 1.2rem 1.5rem 0 0;
+  margin: 1rem 1.5rem 0 0;
 }
 .topic-header::after {
-  margin: 1.2rem 0 0 1.5rem;
+  margin: 1rem 0 0 1.5rem;
 }
 
 .topic-header h2 {
@@ -143,10 +143,10 @@ header h1:last-child {
   }
 
   .topic-header::before {
-    margin: 0.9rem 1.5rem 0 0;
+    margin: 0.75rem 1.5rem 0 0;
   }
   .topic-header::after {
-    margin: 0.9rem 0 0 1.5rem;
+    margin: 0.75rem 0 0 1.5rem;
   }
 
   .topic.activity ul {
