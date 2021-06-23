@@ -64,6 +64,7 @@ header h1:last-child {
   font-weight: bold;
   font-style: italic;
   position: absolute;
+  z-index: -1;
 }
 
 .topic.activity ul {
@@ -72,7 +73,6 @@ header h1:last-child {
 
 .topic.activity li {
   margin-bottom: 1rem;
-  padding: 1rem;
   border: 1px solid #0003;
 }
 .topic.activity li:last-child {
@@ -80,12 +80,15 @@ header h1:last-child {
 }
 
 .topic.activity li h4 {
+  padding: 1rem;
   font-size: 1.25rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .topic.activity li p {
-  margin: 1rem 0 0;
+  margin: 0;
+  padding: 0 1rem 1rem;
 }
 
 .topic.info table {
