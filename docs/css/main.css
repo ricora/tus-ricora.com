@@ -145,9 +145,10 @@ header h1:last-child {
 
 .fixed-screen.join a {
   padding: 1rem 2rem;
-  border-radius: 1.6rem;
+  border: 0.2rem solid #555;
   color: #FFF;
   background: #555;
+  transition-duration: 0.1s;
   font-size: 1.2rem;
   font-weight: bold;
   pointer-events: auto;
@@ -158,13 +159,18 @@ header h1:last-child {
   justify-content: space-between;
 }
 .fixed-screen.join a:hover {
-  background: #777;
+  color: #555;
+  background: #FFF;
 }
 
-.fixed-screen.join a img {
+.fixed-screen.join a svg {
   height: auto;
   width: 1.5rem;
   margin-right: 0.5rem;
+  fill: #FFF;
+}
+.fixed-screen.join a:hover svg {
+  fill: #555;
 }
 
 @media (max-width: 640px) {
