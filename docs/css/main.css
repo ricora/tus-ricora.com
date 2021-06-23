@@ -203,20 +203,5 @@ header h1:last-child {
 
   .topic-header {
     margin: 1rem auto 0;
-  }  
-  
-  .topic-header h2 {
-    font-size: 1.5rem;
-  }
-
-  .topic-header::before {
-    margin: 0.75rem 1.5rem 0 0;
-  }
-  .topic-header::after {
-    margin: 0.75rem 0 0 1.5rem;
-  }
-
-  .topic.activity ul {
-    padding: 0.75rem 0.75rem;
   }
 }
