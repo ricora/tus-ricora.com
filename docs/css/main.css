@@ -91,11 +91,9 @@ header h1:last-child {
   align-items: center;
 }
 
-.topic.activity li h4::after {
-  content: "";
-  background-image: url("./../icon/down.svg");
+.topic.activity li h4 img {
   height: 1rem;
-  width: 1rem;
+  width: auto;
 }
 
 .topic.activity li p {
