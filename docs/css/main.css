@@ -1,6 +1,5 @@
 body {
   color: #000C;
-  padding-bottom: 5rem;
 }
 
 p {
@@ -54,6 +53,7 @@ header h1:last-child {
 
 .join-button span {
   margin: 0 auto 0 0;
+  line-height: 1rem;
 }
 
 .topic-header {
