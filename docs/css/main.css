@@ -107,13 +107,19 @@ header h1:last-child {
   font-weight: bold;
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .toggle h4 img {
   height: 1rem;
   width: auto;
+  margin-left: auto;
+}
+
+.toggle .inner {
+  display: none;
+  overflow: hidden;
+  height: 0;
 }
 
 .toggle p {

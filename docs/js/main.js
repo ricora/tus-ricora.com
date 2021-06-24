@@ -1,5 +1,5 @@
 const toggleHeaders = document.querySelectorAll(".toggle h4");
-const toggleParagraphs = document.querySelectorAll(".toggle p");
+const toggleInners = document.querySelectorAll(".toggle .inner");
 
 const cycle = async (ms, f) => {
   const process = async () => {
@@ -29,34 +29,47 @@ const cssPropTrans = async (elm, cssProp, ms, from, to, unit = (v) => { return v
   });
 };
 
+const getHeight = (elm) => {
+  const clone = elm.cloneNode(true);
+  elm.parentNode.appendChild(clone);
+  clone.style.display = "block";
+  clone.style.height = "auto";
+  clone.style.visibility = "hidden";
+  const height = clone.offsetHeight;
+  elm.parentNode.removeChild(clone);
+  return height;
+};
+
 const openParagraph = async (i) => {
-  const p = toggleParagraphs[i];
-  const h = toggleHeaders[i];
-  if (!p.style.isEasing) {
-    p.style.isEasing = true;
-    p.style.opacity = 0;
-    p.style.display = "block";
+  const inner = toggleInners[i];
+  const header = toggleHeaders[i];
+  const height = getHeight(inner);
+  if (!inner.style.isEasing) {
+    inner.style.isEasing = true;
+    inner.style.opacity = 0;
+    inner.style.display = "block";
     await Promise.all([
-      cssPropTrans(p, "opacity", 160, 0, 1.0),
-      cssPropTrans(p, "lineHeight", 160, 0, 2.0),
-      cssPropTrans(h.downIcon, "transform", 160, 0, 180, (v) => `rotate(${v}deg)`),
+      cssPropTrans(inner, "opacity", 160, 0, 1.0),
+      cssPropTrans(inner, "height", 160, 0, height, (v) => `${v}px`),
+      cssPropTrans(header.downIcon, "transform", 160, 0, 180, (v) => `rotate(${v}deg)`),
     ]);
-    p.style.isEasing = false;
+    inner.style.isEasing = false;
   }
 };
 
 const closePragraph = async (i) => {
-  const p = toggleParagraphs[i];
-  const h = toggleHeaders[i];
-  if (!p.style.isEasing) {
-    p.style.isEasing = true;
+  const inner = toggleInners[i];
+  const header = toggleHeaders[i];
+  const height = getHeight(inner);
+  if (!inner.style.isEasing) {
+    inner.style.isEasing = true;
     await Promise.all([
-      cssPropTrans(p, "opacity", 160, 1.0, 0),
-      cssPropTrans(p, "lineHeight", 160, 2.0, 0),
-      cssPropTrans(h.downIcon, "transform", 160, 180, 0, (v) => `rotate(${v}deg)`),
+      cssPropTrans(inner, "opacity", 160, 1.0, 0),
+      cssPropTrans(inner, "height", 160, height, 0, (v) => `${v}px`),
+      cssPropTrans(header.downIcon, "transform", 160, 180, 0, (v) => `rotate(${v}deg)`),
     ]);
-    p.style.display = "none";
-    p.style.isEasing = false;
+    inner.style.display = "none";
+    inner.style.isEasing = false;
   }
 }
 
@@ -67,7 +80,7 @@ toggleHeaders.forEach((_, i) => {
   toggleHeaders[i].downIcon = toggleHeaders[i].lastElementChild;
 
   toggleHeaders[i].addEventListener("click", () => {
-    if (toggleParagraphs[i].style.display === "none") {
+    if (toggleInners[i].offsetHeight === 0) {
       openParagraph(i);
     } else {
       closePragraph(i);
