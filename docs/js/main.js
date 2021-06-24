@@ -1,6 +1,5 @@
 const toggleHeaders = document.querySelectorAll(".toggle h4");
 const toggleParagraphs = document.querySelectorAll(".toggle p");
-const joinButton = document.querySelector(".fixed-screen.join a");
 
 const cycle = async (ms, f) => {
   const process = async () => {
@@ -61,24 +60,6 @@ const closePragraph = async (i) => {
   }
 }
 
-const expandJoinButton = async () => {
-  if (!joinButton.isEasing) {
-    joinButton.isEasing = true;
-    cssPropTrans(joinButton, "width", 160, 0, 100, (v) => `${v}%`);
-    joinButton.isExpand = true;
-    joinButton.isEasing = false;
-  }
-};
-
-const collapseJoinButton = async () => {
-  if (!joinButton.isEasing) {
-    joinButton.isEasing = true;
-    cssPropTrans(joinButton, "width", 160, 100, 0, (v) => `${v}%`);
-    joinButton.isExpand = false;
-    joinButton.isEasing = false;
-  }
-};
-
 toggleHeaders.forEach((_, i) => {
   const downIcon = document.createElement("img");
   downIcon.setAttribute("src", "./icon/down.svg");
@@ -92,27 +73,4 @@ toggleHeaders.forEach((_, i) => {
       closePragraph(i);
     }
   });
-});
-
-joinButton.isExpand = false;
-document.addEventListener("scroll", () => {
-  scrollHeight = Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight,
-    document.body.offsetHeight,
-    document.documentElement.offsetHeight,
-    document.body.clientHeight,
-    document.documentElement.clientHeight
-  );
-  const pageMostBottom = scrollHeight - window.innerHeight;
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop >= pageMostBottom) {
-    if (!joinButton.isExpand) {
-      expandJoinButton();
-    }
-  } else {
-    if (joinButton.isExpand) {
-      collapseJoinButton();
-    }
-  }
 });

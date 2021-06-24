@@ -8,6 +8,8 @@ p {
   line-height: 2rem;
 }
 
+/* ヘッダー */
+
 header {
   padding: 5rem 1rem;
   max-width: 960px;
@@ -24,6 +26,35 @@ header h1:last-child {
   font-weight: bold;
 }
 
+/* サークル紹介 */
+
+.join-button {
+  width: 100;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border: 0.2rem solid #555;
+  color: #FFF;
+  background: #555;
+}
+.join-button:hover {
+  color: #555;
+  background: #FFF;
+}
+
+.join-button svg {
+  height: 1rem;
+  width: auto;
+  margin: 0 0.5rem 0 auto;
+  fill: #FFF;
+}
+.join-button:hover svg {
+  fill: #555;
+}
+
+.join-button span {
+  margin: 0 auto 0 0;
+}
 
 .topic-header {
   margin: 2rem auto 0;
@@ -143,58 +174,6 @@ header h1:last-child {
 
 .topic.faq ul {
   padding: 1rem 0;
-}
-
-/* 入部リンク(Twitter) */
-
-.fixed-screen {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  pointer-events: none;
-}
-
-.fixed-screen.join > div {
-  height: 100%;
-  max-width: 960px;
-  margin: auto auto 0;
-  position: relative;
-}
-
-.fixed-screen.join a {
-  max-width: calc(100% - 2rem);
-  min-width: 8rem;
-  width: 0%;
-  padding: 0.8rem 0;
-  border: 0.2rem solid #555;
-  color: #FFF;
-  background: #555;
-  pointer-events: auto;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.fixed-screen.join a:hover {
-  color: #555;
-  background: #FFF;
-}
-
-.fixed-screen.join a svg {
-  height: 1rem;
-  width: auto;
-  margin: 0 0.5rem 0 auto;
-  fill: #FFF;
-}
-.fixed-screen.join a:hover svg {
-  fill: #555;
-}
-
-.fixed-screen.join a span {
-  margin: 0 auto 0 0;
 }
 
 @media (max-width: 640px) {
