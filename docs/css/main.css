@@ -10,19 +10,22 @@ p {
 /* ヘッダー */
 
 header {
-  padding: 5rem 1rem;
+  padding: 5rem 1rem 3rem;
   max-width: 960px;
   margin: 0 auto;
 }
 
 header h1:first-child {
   margin-bottom: 1rem;
-  font-size: 3rem;
+}
+header h1:first-child img {
+  height: 2.5rem;
 }
 
 header h1:last-child {
   font-size: 4rem;
   font-weight: bold;
+  color: #009688;
 }
 
 /* サークル紹介 */
@@ -132,7 +135,6 @@ header h1:last-child {
 
 .topic.activity h3 {
   margin-bottom: 0.5rem;
-  color: #0007;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -184,15 +186,15 @@ header h1:last-child {
 
 @media (max-width: 640px) {
   header {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem 0;
   }
   
-  header h1:first-child {
-    font-size: 2rem;
+  header h1:first-child img {
+    height: 1.5rem;
   }
   
   header h1:last-child {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 
   .topic-header {

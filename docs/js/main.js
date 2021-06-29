@@ -75,7 +75,7 @@ const closePragraph = async (i) => {
 
 toggleHeaders.forEach((_, i) => {
   const downIcon = document.createElement("img");
-  downIcon.setAttribute("src", "./icon/down.svg");
+  downIcon.setAttribute("src", "./image/down.svg");
   toggleHeaders[i].appendChild(downIcon);
   toggleHeaders[i].downIcon = toggleHeaders[i].lastElementChild;
 
