@@ -34,23 +34,24 @@ header h1:last-child {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
+  font-weight: bold;
   border: 0.2rem solid #555;
-  color: #FFF;
-  background: #555;
-}
-.join-button:hover {
   color: #555;
   background: #FFF;
+}
+.join-button:hover {
+  color: #FFF;
+  background: #555;
 }
 
 .join-button svg {
   height: 1rem;
   width: auto;
   margin: 0 0.5rem 0 auto;
-  fill: #FFF;
+  fill: #555;
 }
 .join-button:hover svg {
-  fill: #555;
+  fill: #FFF;
 }
 
 .join-button span {
