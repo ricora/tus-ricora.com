@@ -1,12 +1,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
   <title>banbooooのブログ</title>
   
+  <subtitle>統計、機械学習、数学に関する記事を投稿します。</subtitle>
+  
   <link href="http://banboooo.hatenablog.com/"/>
   <updated>2018-10-14T03:58:36+09:00</updated>
   <author>
     <name>banboooo</name>
   </author>
-  <generator uri="http://blog.hatena.ne.jp/" version="8c8f01115690089a3f1cd92fb1fa7b2d">Hatena::Blog</generator>
+  <generator uri="http://blog.hatena.ne.jp/" version="69c77a9ed747d8a2a64f576576c06136">Hatena::Blog</generator>
   <id>hatenablog://blog/17391345971618068544</id>
 
   
@@ -17,7 +19,7 @@
         <link href="http://banboooo.hatenablog.com/entry/2018/10/14/035836"/>
         <id>hatenablog://entry/10257846132652684945</id>
         <published>2018-10-14T03:58:36+09:00</published>
-        <updated>2018-10-14T04:26:18+09:00</updated>        <summary type="html">beta.atcoder.jp editorialで確率がどうのこうの書いてあって ??? となったので。 方針 最終的に求めたい答えは当たり前だけど の形でかける. そして , の値を求めにいく. で求めること. を取り除く時にが連結である場合の数を全体の 通りの中の割合で求めること. この二つが大きなポイントだと思う. 二つ目の方から考える. 2つ目のポイントの考察 ※下記ではとして議論する. を取り除く時にが連結である 間でが最初に除かれる. と言い換えることができる.では,その場合の数はN!のうちどのくらいの割合なのか? 間で,初めて取り除かれるものをとし , これによって事象を定義す…</summary>
+        <updated>2019-11-09T00:20:52+09:00</updated>        <summary type="html">AGC028のB問題 Removing Blocks</summary>
         <content type="html">&lt;p&gt;&lt;iframe src=&quot;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fbeta.atcoder.jp%2Fcontests%2Fagc028%2Ftasks%2Fagc028_b&quot; title=&quot;B - Removing Blocks&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;https://beta.atcoder.jp/contests/agc028/tasks/agc028_b&quot;&gt;beta.atcoder.jp&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;editorialで確率がどうのこうの書いてあって ??? となったので。&lt;/p&gt;
@@ -102,7 +104,9 @@ ans = &lt;span class=&quot;synConstant&quot;&gt;0&lt;/span&gt;
 
 &lt;p&gt;解けてから見ると問題文にわざわざ&lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%20N%21&quot; alt=&quot; N!&quot;/&gt;通りとか書いてくれてるのはヒントだったのかなぁと思ったり。&lt;/p&gt;
 </content>        
-        <link rel="enclosure" href="https://chart.apis.google.com/chart?cht=tx&amp;chl=%20a_0%20A_i%20%2B%20a_1%20A_1%20%2B%20%5Ccdots%20%2B%20a_n%20A_n" type="" length="0" />
+        <category term="競技プログラミング" label="競技プログラミング" />
+        
+        <link rel="enclosure" href="https://cdn.user.blog.st-hatena.com/default_entry_og_image/151453641/151961971911337" type="" length="0" />
 
         <author>
             <name>banboooo</name>
@@ -117,7 +121,7 @@ ans = &lt;span class=&quot;synConstant&quot;&gt;0&lt;/span&gt;
         <link href="http://banboooo.hatenablog.com/entry/2018/09/02/142917"/>
         <id>hatenablog://entry/10257846132618727314</id>
         <published>2018-09-02T14:29:17+09:00</published>
-        <updated>2018-09-02T15:36:39+09:00</updated>        <summary type="html">なんか最近難化傾向にあるような... D - All Your Paths are Different Lengths 1. 以下のようにノード 間に長さ の二つの辺を貼ると , の時のグラフが表現できる. 2. をサイズが2の累乗の区間の和で表すことを考える. ( ルール : サイズの大きい区間から貪欲に決めていくこと ) 例1 : 例2 : これと同じようにグラフをそれぞれ作ると ... こうすると , 同じ長さのパスを一つも作ることなく , グラフを構築することができました . pythonでの実装 L = int(input()) # ノード数を決める for i in range(1…</summary>
+        <updated>2019-12-29T19:48:08+09:00</updated>        <summary type="html">なんか最近難化傾向にあるような... D - All Your Paths are Different Lengths 1. 以下のようにノード 間に長さ の二つの辺を貼ると , の時のグラフが表現できる. 2. をサイズが2の累乗の区間の和で表すことを考える. ( ルール : サイズの大きい区間から貪欲に決めていくこと ) 例1 : 例2 : これと同じようにグラフをそれぞれ作ると ... こうすると , 同じ長さのパスを一つも作ることなく , グラフを構築することができました . pythonでの実装 L = int(input()) # ノード数を決める for i in range(1…</summary>
         <content type="html">&lt;p&gt;なんか最近難化傾向にあるような...&lt;br /&gt;
 &lt;a href=&quot;https://beta.atcoder.jp/contests/arc102/tasks/arc102_b&quot;&gt;D - All Your Paths are Different Lengths&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;考察&gt;&lt;br /&gt;
    1. 以下のようにノード &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%20n%20%2C%20m%20&quot; alt=&quot; n , m &quot;/&gt; 間に長さ &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%200%20%2C%202%5E%7Bn%7D%20&quot; alt=&quot; 0 , 2^{n} &quot;/&gt; の二つの辺を貼ると , &lt;br /&gt;
@@ -153,14 +157,16 @@ edge = []
 &lt;span class=&quot;synIdentifier&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;synIdentifier&quot;&gt;str&lt;/span&gt;(dig) + &lt;span class=&quot;synConstant&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt; + &lt;span class=&quot;synIdentifier&quot;&gt;str&lt;/span&gt;(&lt;span class=&quot;synIdentifier&quot;&gt;len&lt;/span&gt;(edge)))
 s = &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;{0} {1} {2}&amp;quot;&lt;/span&gt;
 &lt;span class=&quot;synStatement&quot;&gt;for&lt;/span&gt; v,v2,w &lt;span class=&quot;synStatement&quot;&gt;in&lt;/span&gt; edge:
-    &lt;span class=&quot;synIdentifier&quot;&gt;print&lt;/span&gt;(s.&lt;span class=&quot;synIdentifier&quot;&gt;format&lt;/span&gt;(v,v2,w))
+    &lt;span class=&quot;synIdentifier&quot;&gt;print&lt;/span&gt;(s.format(v,v2,w))
 &lt;/pre&gt;&lt;p&gt;&lt;br /&gt;
 　　&lt;br /&gt;
 　　&lt;/p&gt;&lt;br /&gt;
 &lt;br /&gt;
 &lt;p&gt;    &lt;/p&gt;
 </content>        
-        <link rel="enclosure" href="https://chart.apis.google.com/chart?cht=tx&amp;chl=%20n%20%2C%20m%20" type="" length="0" />
+        <category term="競技プログラミング" label="競技プログラミング" />
+        
+        <link rel="enclosure" href="https://cdn.user.blog.st-hatena.com/default_entry_og_image/151453641/151961971911337" type="" length="0" />
 
         <author>
             <name>banboooo</name>
@@ -294,7 +300,7 @@ Raw = A.decode_str(Code)
         <link href="http://banboooo.hatenablog.com/entry/2018/07/02/224251"/>
         <id>hatenablog://entry/10257846132597487165</id>
         <published>2018-07-02T22:42:51+09:00</published>
-        <updated>2018-07-12T17:12:45+09:00</updated>        <summary type="html">E - Or Plus Max 高速ゼータ変換の問題。といっても貼るだけの問題ではなく、集合や演算を自分で考察してうまくテンプレに落としてやる必要がある。 また、やってることはbitDPなので言葉を知らなくても解ける(僕はコンテスト中には解けてない) この記事では、どこの部分がいわゆる高速ゼータ変換のテンプレになっているかを書いておく。 そもそも高速ゼータ変換とは ? こちらの記事を参考にさせていただきました。 https://topcoder.g.hatena.ne.jp/iwiwi/20120422/1335065228 高速ゼータ変換 集合に対する関数 に対し、全集合 に対して、 これを…</summary>
+        <updated>2019-11-09T00:31:39+09:00</updated>        <summary type="html">E - Or Plus Max 高速ゼータ変換の問題。といっても貼るだけの問題ではなく、集合や演算を自分で考察してうまくテンプレに落としてやる必要がある。 また、やってることはbitDPなので言葉を知らなくても解ける(僕はコンテスト中には解けてない) この記事では、どこの部分がいわゆる高速ゼータ変換のテンプレになっているかを書いておく。 そもそも高速ゼータ変換とは ? こちらの記事を参考にさせていただきました。 https://topcoder.g.hatena.ne.jp/iwiwi/20120422/1335065228 高速ゼータ変換 集合に対する関数 に対し、全集合 に対して、 これを…</summary>
         <content type="html">&lt;p&gt;&lt;a href=&quot;https://beta.atcoder.jp/contests/arc100/tasks/arc100_c&quot;&gt;E - Or Plus Max&lt;/a&gt;&lt;br /&gt;
 高速ゼータ変換の問題。といっても貼るだけの問題ではなく、集合や演算を自分で考察してうまくテンプレに落としてやる必要がある。&lt;br /&gt;
 また、やってることはbitDPなので言葉を知らなくても解ける(僕はコンテスト中には解けてない)&lt;br /&gt;
@@ -365,6 +371,8 @@ vector&amp;lt;&lt;span class=&quot;synType&quot;&gt;long&lt;/span&gt;&amp;gt; me
 	}
 }
 &lt;/pre&gt;</content>        
+        <category term="競技プログラミング" label="競技プログラミング" />
+        
         <link rel="enclosure" href="https://chart.apis.google.com/chart?cht=tx&amp;chl=%20f%28S%29" type="" length="0" />
 
         <author>
@@ -380,7 +388,7 @@ vector&amp;lt;&lt;span class=&quot;synType&quot;&gt;long&lt;/span&gt;&amp;gt; me
         <link href="http://banboooo.hatenablog.com/entry/2018/06/03/025645"/>
         <id>hatenablog://entry/17391345971650507637</id>
         <published>2018-06-03T02:56:45+09:00</published>
-        <updated>2018-06-03T03:04:18+09:00</updated>        <summary type="html">解けなくて悔しいので記事に。考察の流れとかも書いておく。 排反をとるというのがtwitterで見ててわかりやすそうだったので実装。bitflyer2018-qual.contest.atcoder.jp 考察した(ダメ)解法 1. : 左端と真ん中を決めて右端の数を二分探索で数える。左端と真ん中の決め方をしゃくとりできるかなと思ったが無理。通り試さないとだめ。当然TLE。2. 左端と右端を決めて、真ん中を二分探索で数える。1と本質的には変わらず。二分探索と累積和を使う 解法 正しい解法 左端の都市、真ん中の都市、右端の都市のindexをそれぞれ と書く。 全ての の組み合わせは、 通り ここか…</summary>
+        <updated>2019-11-09T00:31:56+09:00</updated>        <summary type="html">解けなくて悔しいので記事に。考察の流れとかも書いておく。 排反をとるというのがtwitterで見ててわかりやすそうだったので実装。bitflyer2018-qual.contest.atcoder.jp 考察した(ダメ)解法 1. : 左端と真ん中を決めて右端の数を二分探索で数える。左端と真ん中の決め方をしゃくとりできるかなと思ったが無理。通り試さないとだめ。当然TLE。2. 左端と右端を決めて、真ん中を二分探索で数える。1と本質的には変わらず。二分探索と累積和を使う 解法 正しい解法 左端の都市、真ん中の都市、右端の都市のindexをそれぞれ と書く。 全ての の組み合わせは、 通り ここか…</summary>
         <content type="html">&lt;p&gt;解けなくて悔しいので記事に。考察の流れとかも書いておく。&lt;br /&gt;
 排反をとるというのが&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/twitter&quot;&gt;twitter&lt;/a&gt;で見ててわかりやすそうだったので実装。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fbitflyer2018-qual.contest.atcoder.jp%2Ftasks%2Fbitflyer2018_qual_c&quot; title=&quot;C: 徒歩圏内 - codeFlyer （bitFlyer Programming Contest） | AtCoder&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;https://bitflyer2018-qual.contest.atcoder.jp/tasks/bitflyer2018_qual_c&quot;&gt;bitflyer2018-qual.contest.atcoder.jp&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;br /&gt;
 &lt;p&gt;&lt;b&gt;考察した(ダメ)解法&lt;/b&gt;&lt;br /&gt;
@@ -400,6 +408,8 @@ vector&amp;lt;&lt;span class=&quot;synType&quot;&gt;long&lt;/span&gt;&amp;gt; me
  -&gt; 累積和をとる。累積前も取っておくといいかな (?)&lt;/p&gt;&lt;p&gt;3の &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%20%28D%E4%BB%A5%E5%86%85%E3%81%AE%E9%83%BD%E5%B8%82%E6%95%B0%29&quot; alt=&quot; (D&amp;#x4EE5;&amp;#x5185;&amp;#x306E;&amp;#x90FD;&amp;#x5E02;&amp;#x6570;)&quot;/&gt; は&lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%20%28D%E3%82%88%E3%82%8A%E9%9B%A2%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E9%83%BD%E5%B8%82%E6%95%B0%29%20&quot; alt=&quot; (D&amp;#x3088;&amp;#x308A;&amp;#x96E2;&amp;#x308C;&amp;#x3066;&amp;#x3044;&amp;#x308B;&amp;#x90FD;&amp;#x5E02;&amp;#x6570;) &quot;/&gt; から簡単に求まるので心配なし。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%BD%A1%BC%A5%B9%A5%B3%A1%BC%A5%C9&quot;&gt;ソースコード&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://bitflyer2018-qual.contest.atcoder.jp/submissions/2603957&quot;&gt;Submission #2603957 - codeFlyer &amp;#xFF08;bitFlyer Programming Contest&amp;#xFF09; | AtCoder&lt;/a&gt;&lt;/p&gt;
 </content>        
+        <category term="競技プログラミング" label="競技プログラミング" />
+        
         <link rel="enclosure" href="https://chart.apis.google.com/chart?cht=tx&amp;chl=%20O%28N%5E2%20%5Clog%20N%20%29" type="" length="0" />
 
         <author>
@@ -433,7 +443,7 @@ vector&amp;lt;&lt;span class=&quot;synType&quot;&gt;long&lt;/span&gt;&amp;gt; me
         <link href="http://banboooo.hatenablog.com/entry/2018/04/30/160955"/>
         <id>hatenablog://entry/17391345971639937926</id>
         <published>2018-04-30T16:09:55+09:00</published>
-        <updated>2018-04-30T16:09:55+09:00</updated>        <summary type="html">D - 食塩水 解いたのでメモ。悩んだけど、どうやら典型の模様。 蟻本p132の「平均最大化」とほとんど同じ問題。 最初は、ナップザック問題っぽいなぁと思って、DPを必死に考えてたけど よくよく考えてみれば以下の式は別物。 本問 : ナップザック : ~ アルゴリズム ~ 目標の を決めてあげて、この濃度以上のものが作れるか判定する。 濃度 以上のものが作れる or 作れないの境界値が今回の答えの値。まず、判定をどうするか。目標を とすれば各容器 に対し、 を求めて、貪欲に大きいものからとって 0以上なら は作れる。0未満なら作れないとやれば良い。 判定ができれば、あとは境界値を探れば良い。ソ…</summary>
+        <updated>2019-11-09T00:24:14+09:00</updated>        <summary type="html">D - 食塩水 解いたのでメモ。悩んだけど、どうやら典型の模様。 蟻本p132の「平均最大化」とほとんど同じ問題。 最初は、ナップザック問題っぽいなぁと思って、DPを必死に考えてたけど よくよく考えてみれば以下の式は別物。 本問 : ナップザック : ~ アルゴリズム ~ 目標の を決めてあげて、この濃度以上のものが作れるか判定する。 濃度 以上のものが作れる or 作れないの境界値が今回の答えの値。まず、判定をどうするか。目標を とすれば各容器 に対し、 を求めて、貪欲に大きいものからとって 0以上なら は作れる。0未満なら作れないとやれば良い。 判定ができれば、あとは境界値を探れば良い。ソ…</summary>
         <content type="html">&lt;p&gt;&lt;a href=&quot;https://beta.atcoder.jp/contests/abc034/tasks/abc034_d&quot;&gt;D - &amp;#x98DF;&amp;#x5869;&amp;#x6C34;&lt;/a&gt;&lt;br /&gt;
 解いたのでメモ。悩んだけど、どうやら典型の模様。&lt;br /&gt;
 蟻本p132の「平均最大化」とほとんど同じ問題。&lt;br /&gt;
@@ -449,6 +459,8 @@ vector&amp;lt;&lt;span class=&quot;synType&quot;&gt;long&lt;/span&gt;&amp;gt; me
 &lt;p&gt;まとめ : &lt;br /&gt;
 &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%20max%28%5Cdfrac%7B%5Csum%20v%7D%7B%5Csum%20w%7D%29&quot; alt=&quot; max(\dfrac{\sum v}{\sum w})&quot;/&gt; を求めるのは典型 ! 二分探索 + 貪欲&lt;/p&gt;
 </content>        
+        <category term="競技プログラミング" label="競技プログラミング" />
+        
         <link rel="enclosure" href="https://chart.apis.google.com/chart?cht=tx&amp;chl=%20max%28%5Cdfrac%7B%5Csum%20v%7D%7B%5Csum%20w%7D%29" type="" length="0" />
 
         <author>
@@ -464,13 +476,13 @@ vector&amp;lt;&lt;span class=&quot;synType&quot;&gt;long&lt;/span&gt;&amp;gt; me
         <link href="http://banboooo.hatenablog.com/entry/2018/04/08/191942"/>
         <id>hatenablog://entry/17391345971633376575</id>
         <published>2018-04-08T19:19:42+09:00</published>
-        <updated>2018-04-08T19:19:42+09:00</updated>        <summary type="html">700点問題のD問題。むずかった。 D - Worst Case 高橋君のとった得点を とする。 高橋君よりスコアの小さい最大の人数を求めたいので、1つ目のコンテストが高いスコアならば、2回目は低いスコア(逆もしかり)というように掛け算のペアを作ってあげる。(考察1) (わからなければ解説放送へ) www.youtube.com 高橋君よりスコアが小さい人のスコア は必ず または を満たすので まず、 の場合を考えてみる。 (考察1)より、以下のようにペアを考えることができる。 すると、この場合はすべてのペアの積がABより小さくなることがわかる。 次に の場合を考えてみる。先ほどのように を元…</summary>
+        <updated>2019-11-09T00:23:46+09:00</updated>        <summary type="html">700点問題のD問題。むずかった。 D - Worst Case 高橋君のとった得点を とする。 高橋君よりスコアの小さい最大の人数を求めたいので、1つ目のコンテストが高いスコアならば、2回目は低いスコア(逆もしかり)というように掛け算のペアを作ってあげる。(考察1) (わからなければ解説放送へ) www.youtube.com 高橋君よりスコアが小さい人のスコア は必ず または を満たすので まず、 の場合を考えてみる。 (考察1)より、以下のようにペアを考えることができる。 すると、この場合はすべてのペアの積がABより小さくなることがわかる。 次に の場合を考えてみる。先ほどのように を元…</summary>
         <content type="html">&lt;p&gt;700点問題のD問題。むずかった。&lt;br /&gt;
 &lt;a href=&quot;https://beta.atcoder.jp/contests/arc094/tasks/arc094_b&quot;&gt;D - Worst Case&lt;/a&gt;&lt;br /&gt;
 高橋君のとった得点を &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=A%2CB%20%28%20A%20%5Cleq%20B%29&quot; alt=&quot;A,B ( A \leq B)&quot;/&gt; とする。&lt;br /&gt;
 高橋君よりスコアの小さい最大の人数を求めたいので、1つ目のコンテストが高いスコアならば、2回目は低いスコア(逆もしかり)というように掛け算のペアを作ってあげる。(考察1)&lt;br /&gt;
 (わからなければ解説放送へ)&lt;br /&gt;
-&lt;iframe src=&quot;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHDRfgn_UXLE&quot; title=&quot;AtCoder Regular Contest 094/ Beginner Contest 093 解説放送&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=HDRfgn_UXLE&quot;&gt;www.youtube.com&lt;/a&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;iframe src=&quot;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHDRfgn_UXLE&quot; title=&quot;YouTube&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=HDRfgn_UXLE&quot;&gt;www.youtube.com&lt;/a&gt;&lt;/cite&gt;&lt;br /&gt;
 高橋君よりスコアが小さい人のスコア &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=a%2Cb%20%28%20a%20%5Cleq%20b%29&quot; alt=&quot;a,b ( a \leq b)&quot;/&gt; は必ず  &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=a%20%3C%20A&quot; alt=&quot;a &amp;lt; A&quot;/&gt; または &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%20b%20%3C%20B&quot; alt=&quot; b &amp;lt; B&quot;/&gt; を満たすので&lt;br /&gt;
 まず、 &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=a%20%3C%20A&quot; alt=&quot;a &amp;lt; A&quot;/&gt;  の場合を考えてみる。&lt;br /&gt;
 (考察1)より、以下のようにペアを考えることができる。&lt;br /&gt;
@@ -498,6 +510,8 @@ vector&amp;lt;&lt;span class=&quot;synType&quot;&gt;long&lt;/span&gt;&amp;gt; me
 こういう時は、三分探索を使えば、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%B6%CB%C3%CD&quot;&gt;極値&lt;/a&gt;、今回で言えば積の最大値を非常に効率よく求められる。&lt;br /&gt;
 &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%B6%CB%C3%CD&quot;&gt;極値&lt;/a&gt;を&lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%20X&quot; alt=&quot; X&quot;/&gt;の関数と見れば、この関数は単調非減少の関数なので、こちらは二分探索で&lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=X&quot; alt=&quot;X&quot;/&gt;を定めてあげれば答えがもとまる。&lt;/p&gt;
 </content>        
+        <category term="競技プログラミング" label="競技プログラミング" />
+        
         <link rel="enclosure" href="https://chart.apis.google.com/chart?cht=tx&amp;chl=A%2CB%20%28%20A%20%5Cleq%20B%29" type="" length="0" />
 
         <author>
@@ -513,7 +527,7 @@ vector&amp;lt;&lt;span class=&quot;synType&quot;&gt;long&lt;/span&gt;&amp;gt; me
         <link href="http://banboooo.hatenablog.com/entry/2018/04/01/163800"/>
         <id>hatenablog://entry/17391345971631352881</id>
         <published>2018-04-01T16:38:00+09:00</published>
-        <updated>2018-04-04T11:36:22+09:00</updated>        <summary type="html">競プロ用の整数周りのライブラリ(言語はc++14用) 使用可能なメソッド 1.素数関連 エラトステネスのふるい 素数かどうか判定 素数列挙 n以下の素数の個数 2.約数倍数関連 素因数分解 3.階乗累乗関連 ※数が大きいのでを法としてmodをとっている。 n階乗 mod割り算 template &lt;typename T&gt; class Integer { private: const long mod = 1000000007; bool primeflg; bool factorialflg; vector&lt;T&gt; prime_list; vector&lt;T&gt; factorial; map&lt;T,lo…</summary>
+        <updated>2019-11-09T00:16:42+09:00</updated>        <summary type="html">競プロ用の整数周りのライブラリ(言語はc++14用) 使用可能なメソッド 1.素数関連 エラトステネスのふるい 素数かどうか判定 素数列挙 n以下の素数の個数 2.約数倍数関連 素因数分解 3.階乗累乗関連 ※数が大きいのでを法としてmodをとっている。 n階乗 mod割り算 template &lt;typename T&gt; class Integer { private: const long mod = 1000000007; bool primeflg; bool factorialflg; vector&lt;T&gt; prime_list; vector&lt;T&gt; factorial; map&lt;T,lo…</summary>
         <content type="html">&lt;p&gt;競プロ用の整数周りのライブラリ(言語は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/c%2B%2B&quot;&gt;c++&lt;/a&gt;14用)&lt;br /&gt;
 使用可能なメソッド&lt;br /&gt;
 1.&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C1%C7%BF%F4&quot;&gt;素数&lt;/a&gt;関連&lt;/p&gt;
@@ -686,7 +700,7 @@ public:
 	cout &amp;lt;&amp;lt; it.nCrMod(8,3) &amp;lt;&amp;lt; endl; // -&amp;gt; 56
 	return 0;
 }&lt;/pre&gt;</content>        
-        <category term="競プロ" label="競プロ" />
+        <category term="競技プログラミング" label="競技プログラミング" />
         
         <link rel="enclosure" href="https://chart.apis.google.com/chart?cht=tx&amp;chl=gcd%2Clcm" type="" length="0" />
 
@@ -703,7 +717,7 @@ public:
         <link href="http://banboooo.hatenablog.com/entry/2018/03/11/014426"/>
         <id>hatenablog://entry/17391345971624242225</id>
         <published>2018-03-11T01:44:26+09:00</published>
-        <updated>2018-03-11T01:45:36+09:00</updated>        <summary type="html">競プロ界ではとても有名(?)なダイクストラ法。 典型問題からちょっとひねった問題で個人的には良問だと思った。 codeforces.com 問題文の要約 (訳に脚色入ってます。) 個の町と本の道があって道には通行料が存在。コンサートが全ての町で行われるが、チケット料も町ごとに異なる。町にいる人が、コンサートを一番安く見る時、その料金(他の町へ行くなら通行料往復分込み)を表示せよ。 アルゴリズム まずグラフ構造に直す。頂点辺、辺の重みは往復分の通行料とできる。 さて、チケット料の情報をどう扱うかが今回最大の工夫ポイント。 まず、一つの頂点 について考える。通常のダイクストラでは最初優先度付きキュ…</summary>
+        <updated>2019-11-09T00:23:11+09:00</updated>        <summary type="html">競プロ界ではとても有名(?)なダイクストラ法。 典型問題からちょっとひねった問題で個人的には良問だと思った。 codeforces.com 問題文の要約 (訳に脚色入ってます。) 個の町と本の道があって道には通行料が存在。コンサートが全ての町で行われるが、チケット料も町ごとに異なる。町にいる人が、コンサートを一番安く見る時、その料金(他の町へ行くなら通行料往復分込み)を表示せよ。 アルゴリズム まずグラフ構造に直す。頂点辺、辺の重みは往復分の通行料とできる。 さて、チケット料の情報をどう扱うかが今回最大の工夫ポイント。 まず、一つの頂点 について考える。通常のダイクストラでは最初優先度付きキュ…</summary>
         <content type="html">&lt;p&gt;競プロ界ではとても有名(?)な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C0%A5%A4%A5%AF%A5%B9%A5%C8%A5%E9&quot;&gt;ダイクストラ&lt;/a&gt;法。&lt;br /&gt;
 典型問題からちょっとひねった問題で個人的には良問だと思った。&lt;br /&gt;
 &lt;iframe src=&quot;https://hatenablog-parts.com/embed?url=http%3A%2F%2Fcodeforces.com%2Fcontest%2F938%2Fproblem%2FD&quot; title=&quot;Problem - D - Codeforces&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://codeforces.com/contest/938/problem/D&quot;&gt;codeforces.com&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
@@ -728,7 +742,7 @@ public:
 &lt;/div&gt;
 &lt;div class=&quot;section&quot;&gt;
     &lt;h4&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%BD%A1%BC%A5%B9%A5%B3%A1%BC%A5%C9&quot;&gt;ソースコード&lt;/a&gt;&lt;/h4&gt;
-    &lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;#include &amp;lt;bits/stdc++.h&amp;gt;
+    &lt;pre class=&quot;code c++&quot; data-lang=&quot;c++&quot; data-unlink&gt;#include &amp;lt;bits/stdc++.h&amp;gt;
 #define REP(i,n) for (long i=0;i&amp;lt;(n);i++)
 #define FOR(i,a,b) for (long i=(a);i&amp;lt;(b);i++)
 #define RREP(i,n) for(long i=n;i&amp;gt;=0;i--)
@@ -836,6 +850,8 @@ int main(void){
     &lt;p&gt;数は結構大きくなるのでlong long型じゃないと通らなかった。&lt;/p&gt;
 
 &lt;/div&gt;</content>        
+        <category term="競技プログラミング" label="競技プログラミング" />
+        
         <link rel="enclosure" href="https://chart.apis.google.com/chart?cht=tx&amp;chl=n" type="" length="0" />
 
         <author>
@@ -851,7 +867,7 @@ int main(void){
         <link href="http://banboooo.hatenablog.com/entry/2018/02/26/132858"/>
         <id>hatenablog://entry/17391345971619835129</id>
         <published>2018-02-26T13:28:58+09:00</published>
-        <updated>2018-11-01T18:51:56+09:00</updated>        <summary type="html">初投稿です。個人的にはアルゴリズムも実装も大変だったので書き残しておきます。 agc021.contest.atcoder.jp乱数で決まるは半径の円の内部。穴は1辺 の正方形の内部の領域に存在する。 がめちゃめちゃ大きいので、穴の近くには滅多に落ちない。全体図穴を頂点とする凸多角形で、かつ全ての穴を内部含むような図形(凸包というらしい)を作る。乱数で決まる点は主に、この凸多角形の外側の領域に落ちるので、凸多角形の頂点になってる穴のどれかに落ちる。内部に落ちた時のみ、頂点に使われてない穴にも落ちる可能性があるが、確率は0とみなせる。(精度的に)つまり、凸多角形の頂点に対してのみ確率を考えればよ…</summary>
+        <updated>2019-11-09T00:22:56+09:00</updated>        <summary type="html">初投稿です。個人的にはアルゴリズムも実装も大変だったので書き残しておきます。 agc021.contest.atcoder.jp乱数で決まるは半径の円の内部。穴は1辺 の正方形の内部の領域に存在する。 がめちゃめちゃ大きいので、穴の近くには滅多に落ちない。全体図穴を頂点とする凸多角形で、かつ全ての穴を内部含むような図形(凸包というらしい)を作る。乱数で決まる点は主に、この凸多角形の外側の領域に落ちるので、凸多角形の頂点になってる穴のどれかに落ちる。内部に落ちた時のみ、頂点に使われてない穴にも落ちる可能性があるが、確率は0とみなせる。(精度的に)つまり、凸多角形の頂点に対してのみ確率を考えればよ…</summary>
         <content type="html">&lt;p&gt;初投稿です。個人的には&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A2%A5%EB%A5%B4%A5%EA%A5%BA%A5%E0&quot;&gt;アルゴリズム&lt;/a&gt;も実装も大変だったので書き残しておきます。&lt;br /&gt;
 &lt;iframe src=&quot;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fagc021.contest.atcoder.jp%2Ftasks%2Fagc021_b&quot; title=&quot;B: Holes - AtCoder Grand Contest 021 | AtCoder&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;https://agc021.contest.atcoder.jp/tasks/agc021_b&quot;&gt;agc021.contest.atcoder.jp&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;乱数で決まる&lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%28x%2Cy%29&quot; alt=&quot;(x,y)&quot;/&gt;は半径&lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=R&quot; alt=&quot;R&quot;/&gt;の円の内部。穴は1辺 &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=2%20%5Ctimes%2010%5E6%20&quot; alt=&quot;2 \times 10^6 &quot;/&gt;の正方形の内部の領域に存在する。&lt;br /&gt;
 &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=R&quot; alt=&quot;R&quot;/&gt;がめちゃめちゃ大きいので、穴の近くには滅多に落ちない。&lt;/p&gt;&lt;p&gt;&lt;figure class=&quot;figure-image figure-image-fotolife&quot; title=&quot;全体&quot;&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/banboooo/20180226021502&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;https://cdn-ak.f.st-hatena.com/images/fotolife/b/banboooo/20180226/20180226021502.jpg&quot; alt=&quot;f:id:banboooo:20180226021502j:image:w400&quot; title=&quot;f:id:banboooo:20180226021502j:image:w400&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:400px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;figcaption&gt;全体図&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;穴を頂点とする凸多角形で、かつ全ての穴を内部含むような図形(凸包というらしい)を作る。乱数で決まる点は主に、この凸多角形の外側の領域に落ちるので、凸多角形の頂点になってる穴のどれかに落ちる。&lt;/p&gt;&lt;p&gt;内部に落ちた時のみ、頂点に使われてない穴にも落ちる可能性があるが、確率は0とみなせる。(精度的に)つまり、凸多角形の頂点に対してのみ確率を考えればよい !!&lt;/p&gt;&lt;p&gt;隣同士の2つの穴について考えると、2つの穴を結んだ直線の垂直二等分線を基準に、どちらの穴に落ちるかがわかるので、これを凸多角形の全ての辺に対してやってみる。&lt;/p&gt;&lt;p&gt;すると、全部の垂直二等分線が中心に集まり、1点で交わるわけではないので小さい領域ができてしまうが、これらを無視すれば、下の図のように領域分割すれば良さそう。&lt;/p&gt;&lt;p&gt;&lt;figure class=&quot;figure-image figure-image-fotolife&quot; title=&quot;領域分割&quot;&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/banboooo/20180226020127&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;https://cdn-ak.f.st-hatena.com/images/fotolife/b/banboooo/20180226/20180226020127.jpg&quot; alt=&quot;f:id:banboooo:20180226020127j:image:w400&quot; title=&quot;f:id:banboooo:20180226020127j:image:w400&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:400px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;figcaption&gt;領域分割&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;中心角 = (垂直二等分線の交わる角度) = &lt;img src=&quot;https://chart.apis.google.com/chart?cht=tx&amp;chl=%5Cpi&quot; alt=&quot;\pi&quot;/&gt;- (辺の交わる角度)&lt;br /&gt;
@@ -992,6 +1008,8 @@ int main(void){
 	&lt;span class=&quot;synStatement&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;synConstant&quot;&gt;0&lt;/span&gt;;
 }
 &lt;/pre&gt;</content>        
+        <category term="競技プログラミング" label="競技プログラミング" />
+        
         <link rel="enclosure" href="http://chart.apis.google.com/chart?cht=tx&amp;chl=%28x%2Cy%29" type="" length="0" />
 
         <author>
