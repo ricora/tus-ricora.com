@@ -316,55 +316,6 @@ ul#nav li.active a { color: #11ABB0; }
   color: magenta;
 }
 
-.box-scrollbar {
-  overflow: auto;
-  font-size: 16px;
-  height: 500px;
-}
-
-.box-scrollbar .ac-label {
-  font: 16px sans-serif;
-  color: #57606B;
-  line-height: 16px;
-  text-indent: -2.5em;
-  margin-left: 2.5em;
-}
-
-.box-scrollbar .ac-content p {
-  text-indent: -2.5em;
-  margin-left: 2.5em;
-}
-
-.box-scrollbar .new:before {
-  content: "New";
-  color: red;
-  display: inline-block;
-  width: 2.5em;
-  text-indent: 0;
-}
-
-.box-scrollbar .old:before, .box-scrollbar .ac-content p:before {
-  content: "   ";
-  display: inline-block;
-  width: 2.5em;
-  text-indent: 0;
-}
-
-.box-scrollbar .ac-check { display: none; }
-
-.box-scrollbar .ac-content {
-  height: 0;
-  opacity: 0;
-  padding: 0 10px;
-  visibility: hidden;
-}
-
-.box-scrollbar .ac-check:checked + .ac-label + .ac-content {
-  height: auto;
-  opacity: 1;
-  padding: 10px;
-  visibility: visible;
-}
 /* ================================================================== */
 
 /* d. activity
