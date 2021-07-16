@@ -1,16 +1,9 @@
-RICORA言語班HP
+# RICORA 言語班 Homepage
 
-リンク:https://ricora.github.io/RICORA_HP/
+## 目的
 
-## TODO
+[RICORA言語班(電子計算機研究会 言語班)について](https://tus-ricora.com/programming/about/) を参考に、2021/06/22時点の [RICORA PROGRAMMING TEAM](https://www.ed.tus.ac.jp/ricora/lang/RICORA_HP/docs/index.html) の内容を置き換える。
 
-1. ~~NEWS : 勧誘文章~~
-2. ~~Activity : 説明. 詳しい人が書く~~
-3. ~~Work : ICPCの成績を正確にかく~~
-4. ~~Work : AtCoderのアカウントをリンク貼って載せていい人は載せる。（許可申請)~~
-5. ~~Work : 過去のLTで載せていいよという人のはpdfとかで載せる.~~
-6. Blog : ブログ書いている人で載せていいよという人は載せる.ここでは記事単位で載せる.順次更新
-7. About Us : サークルのメンバー構成を正確にかく
-8. ~~About Us : 自分のHPとかあって載せていいよという人は載せる.~~
-9. ~~Header : ロゴを画像で差し替える. RICORAのロゴを作るか適当にRICORAの文字を入れる.~~
-10. ~~リンクの整備をちゃんとする.~~
+## 暫定公開先
+
+[https://kakudo415.github.io/RICORA_HP/](https://kakudo415.github.io/RICORA_HP/)
