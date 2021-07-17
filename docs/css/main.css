@@ -15,10 +15,16 @@ header {
   margin: 0 auto;
 }
 
+header h1 a {
+  display: inline-block;
+  overflow: hidden;
+}
+
 header h1:first-child {
   margin-bottom: 1rem;
 }
 header h1:first-child img {
+  display: inline-block;
   height: 2.5rem;
 }
 
