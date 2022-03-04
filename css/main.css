@@ -115,10 +115,12 @@ header h1:last-child {
 
 .topic.team{
   padding-bottom: 3rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
-.topic.team::after{
-  padding-bottom: none;
+.topic.team:last-child{
+  padding-bottom: 0;
 }
 
 /* サークルについて */
