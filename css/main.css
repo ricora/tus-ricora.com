@@ -10,7 +10,7 @@ p {
 /* ヘッダー */
 
 header {
-  padding: 5rem 1rem 3rem;
+  padding: 3rem 1rem 1rem;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -44,6 +44,8 @@ header h1:last-child {
   border: 0.2rem solid #555;
   color: #555;
   background: #FFF;
+  text-align: center;
+  display:block;
 }
 .join-button:hover {
   color: #FFF;
@@ -66,7 +68,7 @@ header h1:last-child {
 }
 
 .topic-header {
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
   padding: 1rem 1rem;
   max-width: 960px;
   display: flex;
@@ -102,52 +104,21 @@ header h1:last-child {
 
 /* トグル */
 
-.toggle {
-  margin-bottom: 1rem;
-  border: 1px solid #0003;
-}
-.toggle:last-child {
-  margin-bottom: 0;
-}
-
-.toggle h4 {
-  padding: 1.5rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.toggle h4 img {
-  height: 1rem;
-  width: auto;
-  margin-left: auto;
-}
-
-.toggle .inner {
-  display: none;
-  overflow: hidden;
-  height: 0;
-}
-
-.toggle p {
-  margin: 0;
-  padding: 0 1rem 1rem;
-}
-
-
 /* 活動内容 */
 
-.topic.activity h3 {
+.topic h3 {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: #555;
 }
 
-.topic.activity ul {
-  padding: 1rem 0;
+.topic.team{
+  padding-bottom: 3rem;
+}
+
+.topic.team::after{
+  padding-bottom: none;
 }
 
 /* サークルについて */
@@ -186,10 +157,6 @@ header h1:last-child {
 }
 
 /* よくある質問 */
-
-.topic.faq ul {
-  padding: 1rem 0;
-}
 
 /* フッター */
 
