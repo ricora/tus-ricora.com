@@ -20,17 +20,9 @@ header h1 a {
   overflow: hidden;
 }
 
-header h1:first-child {
-  margin-bottom: 1rem;
-}
-header h1:first-child img {
+header h1 img {
   display: inline-block;
   height: 2.5rem;
-}
-
-header h1:last-child {
-  font-size: 4rem;
-  font-weight: bold;
 }
 
 /* サークル紹介 */
@@ -102,8 +94,6 @@ header h1:last-child {
   padding: 1rem 1rem;
 }
 
-/* トグル */
-
 /* 活動内容 */
 
 .topic h3 {
@@ -134,7 +124,6 @@ header h1:last-child {
 
 .topic.info tr {
   line-height: 2rem;
-  border-bottom: 1px solid #0003;
 }
 
 .topic.info tr:last-child {
@@ -157,8 +146,6 @@ header h1:last-child {
 .topic.info a:hover {
   text-decoration: unset;
 }
-
-/* よくある質問 */
 
 /* フッター */
 
